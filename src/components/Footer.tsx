@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Phone, Mail, MapPin, Linkedin, Twitter, Facebook } from 'lucide-react';
 
@@ -32,9 +33,7 @@ const Footer = () => {
             <ul className="space-y-2 text-gray-400">
               <li><a href="#" className="hover:text-white transition-colors">IP Telephony Solutions</a></li>
               <li><a href="#" className="hover:text-white transition-colors">AI Automation Services</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">System Integration</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Security & Compliance</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Training & Support</a></li>
+              <li><a href="#" className="hover:text-white transition-colors">Performance Optimization</a></li>
             </ul>
           </div>
 

@@ -65,10 +65,6 @@ const HeroSection = () => {
                 alt="Modern technology and communication solutions"
                 className="w-full h-80 object-cover rounded-lg shadow-lg"
               />
-              <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-lg shadow-lg">
-                <div className="text-3xl font-bold text-blue-600">99.9%</div>
-                <div className="text-gray-600">Uptime Guarantee</div>
-              </div>
               <div className="absolute -top-6 -right-6 bg-white p-6 rounded-lg shadow-lg">
                 <div className="text-3xl font-bold text-purple-600">Expert</div>
                 <div className="text-gray-600">Consulting</div>

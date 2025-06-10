@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Phone, Bot, Settings, Shield, Zap, Users } from 'lucide-react';
+import { Phone, Bot, Zap } from 'lucide-react';
 
 const ServicesSection = () => {
   const services = [
@@ -17,28 +17,10 @@ const ServicesSection = () => {
       features: ["Process Automation", "Chatbot Development", "AI Integration", "Workflow Optimization"]
     },
     {
-      icon: Settings,
-      title: "System Integration",
-      description: "Seamless integration of communication systems with existing business applications and CRM platforms.",
-      features: ["CRM Integration", "API Development", "Data Migration", "Custom Connectors"]
-    },
-    {
-      icon: Shield,
-      title: "Security & Compliance",
-      description: "Enterprise-grade security implementation ensuring your communication systems meet industry standards.",
-      features: ["Security Audits", "Compliance Management", "Encryption Setup", "Access Control"]
-    },
-    {
       icon: Zap,
       title: "Performance Optimization",
       description: "Continuous monitoring and optimization to ensure peak performance of your communication infrastructure.",
       features: ["Network Monitoring", "Performance Analytics", "Capacity Planning", "Optimization Reports"]
-    },
-    {
-      icon: Users,
-      title: "Training & Support",
-      description: "Comprehensive training programs and ongoing support to maximize your team's productivity with new systems.",
-      features: ["User Training", "Technical Documentation", "Help Desk Support", "Best Practices"]
     }
   ];
 
