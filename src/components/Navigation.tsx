@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Menu, X, Phone, Mail } from 'lucide-react';
 
@@ -19,7 +18,7 @@ const Navigation = () => {
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
             <h1 className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-              TechConsult Pro
+              IntelliVoxAI
             </h1>
           </div>
           
@@ -59,7 +58,7 @@ const Navigation = () => {
             </div>
             <div className="flex items-center text-gray-600 text-sm">
               <Mail className="h-4 w-4 mr-1" />
-              <span>info@techconsultpro.com</span>
+              <span>info@intellivoxai.com</span>
             </div>
           </div>
 

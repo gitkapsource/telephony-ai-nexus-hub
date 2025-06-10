@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Phone, Mail, MapPin, Linkedin, Twitter, Facebook } from 'lucide-react';
 
@@ -9,7 +8,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-8">
           <div className="space-y-4">
             <h3 className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-              TechConsult Pro
+              IntelliVoxAI
             </h3>
             <p className="text-gray-400 leading-relaxed">
               Leading provider of IP Telephony and AI Automation consulting services, 
@@ -59,7 +58,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-4 w-4" />
-                <span>info@techconsultpro.com</span>
+                <span>info@intellivoxai.com</span>
               </div>
               <div className="flex items-center space-x-3">
                 <MapPin className="h-4 w-4" />
@@ -70,7 +69,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-          <p>&copy; 2024 TechConsult Pro. All rights reserved. | Privacy Policy | Terms of Service</p>
+          <p>&copy; 2024 IntelliVoxAI. All rights reserved. | Privacy Policy | Terms of Service</p>
         </div>
       </div>
     </footer>

@@ -22,7 +22,7 @@ const AboutSection = () => {
               </h2>
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
                 With over 15 years of experience in telecommunications and emerging AI technologies, 
-                TechConsult Pro has established itself as a trusted partner for businesses seeking 
+                IntelliVoxAI has established itself as a trusted partner for businesses seeking 
                 to modernize their communication infrastructure.
               </p>
               <p className="text-lg text-gray-600 leading-relaxed">
