@@ -40,7 +40,7 @@ const HeroSection = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <CheckCircle className="h-5 w-5 text-green-500" />
-                <span className="text-gray-700">24/7 Technical Support & Maintenance</span>
+                <span className="text-gray-700">Comprehensive Technical Support & Maintenance</span>
               </div>
             </div>
 
@@ -70,8 +70,8 @@ const HeroSection = () => {
                 <div className="text-gray-600">Uptime Guarantee</div>
               </div>
               <div className="absolute -top-6 -right-6 bg-white p-6 rounded-lg shadow-lg">
-                <div className="text-3xl font-bold text-purple-600">24/7</div>
-                <div className="text-gray-600">Expert Support</div>
+                <div className="text-3xl font-bold text-purple-600">Expert</div>
+                <div className="text-gray-600">Consulting</div>
               </div>
             </div>
           </div>
