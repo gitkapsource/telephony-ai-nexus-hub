@@ -20,16 +20,6 @@ const AboutSection = () => {
                 Leading the Future of 
                 <span className="block text-blue-600">Business Communication</span>
               </h2>
-              <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                With over 15 years of experience in telecommunications and emerging AI technologies, 
-                IntelliVoxAI has established itself as a trusted partner for businesses seeking 
-                to modernize their communication infrastructure.
-              </p>
-              <p className="text-lg text-gray-600 leading-relaxed">
-                Our team of certified experts combines deep technical knowledge with practical 
-                business insights to deliver solutions that not only meet today's needs but 
-                also position your organization for future growth.
-              </p>
             </div>
 
             <div className="grid grid-cols-2 gap-6">
