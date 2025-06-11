@@ -1,6 +1,5 @@
-
 import React, { useState } from 'react';
-import { MapPin, Phone, Mail, Send } from 'lucide-react';
+import { Phone, Mail, Send } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 
 const ContactSection = () => {
@@ -84,17 +83,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <div className="font-semibold text-gray-900">Email</div>
-                  <div className="text-gray-600">info@techconsultpro.com</div>
-                </div>
-              </div>
-
-              <div className="flex items-center space-x-4">
-                <div className="flex items-center justify-center w-12 h-12 bg-blue-100 rounded-lg">
-                  <MapPin className="h-6 w-6 text-blue-600" />
-                </div>
-                <div>
-                  <div className="font-semibold text-gray-900">Office</div>
-                  <div className="text-gray-600">123 Tech Plaza, Silicon Valley, CA 94105</div>
+                  <div className="text-gray-600">info@intellivoxai.in</div>
                 </div>
               </div>
             </div>
