@@ -15,13 +15,6 @@ const AboutSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div className="space-y-8">
-            <div>
-              <h2 className="text-4xl font-bold text-gray-900 mb-6">
-                Leading the Future of 
-                <span className="block text-blue-600">Business Communication</span>
-              </h2>
-            </div>
-
             <div className="grid grid-cols-2 gap-6">
               {stats.map((stat, index) => (
                 <div key={index} className="text-center">
@@ -48,7 +41,7 @@ const AboutSection = () => {
                   <div className="space-y-2">
                     <div className="flex items-center">
                       <div className="w-2 h-2 bg-blue-600 rounded-full mr-2"></div>
-                      <span className="text-gray-700">Cisco Certified</span>
+                      <span className="text-gray-700">AWS Certified</span>
                     </div>
                     <div className="flex items-center">
                       <div className="w-2 h-2 bg-purple-600 rounded-full mr-2"></div>
