@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Phone, Mail, Linkedin, Twitter, Facebook } from 'lucide-react';
+import { Phone, Mail } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -15,17 +15,6 @@ const Footer = () => {
               Leading provider of IP Telephony and AI Automation consulting services, 
               helping businesses transform their communication infrastructure.
             </p>
-            <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">
-                <Linkedin className="h-5 w-5" />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">
-                <Twitter className="h-5 w-5" />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">
-                <Facebook className="h-5 w-5" />
-              </a>
-            </div>
           </div>
 
           <div>
@@ -41,10 +30,6 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4">Company</h4>
             <ul className="space-y-2 text-gray-400">
               <li><a href="#" className="hover:text-white transition-colors">About Us</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Our Team</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Case Studies</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Careers</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">News & Insights</a></li>
             </ul>
           </div>
 
@@ -64,7 +49,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-          <p>&copy; 2024 IntelliVoxAI. All rights reserved. | Privacy Policy | Terms of Service</p>
+          <p>&copy; 2024 IntelliVoxAI. All rights reserved.</p>
         </div>
       </div>
     </footer>
