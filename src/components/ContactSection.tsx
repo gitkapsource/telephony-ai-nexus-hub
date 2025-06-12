@@ -1,4 +1,5 @@
 
+
 import React, { useState } from 'react';
 import { Phone, Mail, Send } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
@@ -189,9 +190,8 @@ const ContactSection = () => {
                     <option value="ip-telephony">IP Telephony Solutions</option>
                     <option value="ai-automation">AI Automation Services</option>
                     <option value="system-integration">System Integration</option>
-                    <option value="security">Security & Compliance</option>
                     <option value="optimization">Performance Optimization</option>
-                    <option value="training">Training & Support</option>
+                    <option value="voip-support">VoIP Troubleshooting & Support</option>
                   </select>
                 </div>
               </div>
@@ -235,3 +235,4 @@ const ContactSection = () => {
 };
 
 export default ContactSection;
+
