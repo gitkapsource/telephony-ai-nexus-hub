@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Phone, Mail, Send } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
@@ -107,7 +108,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <div className="font-semibold text-gray-900">Phone</div>
-                  <div className="text-gray-600">+1 (555) 123-4567</div>
+                  <div className="text-gray-600">+91-9825597662</div>
                 </div>
               </div>
 
