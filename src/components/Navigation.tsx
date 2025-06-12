@@ -54,11 +54,11 @@ const Navigation = () => {
           <div className="hidden md:flex items-center space-x-4">
             <div className="flex items-center text-gray-600 text-sm">
               <Phone className="h-4 w-4 mr-1" />
-              <span>+1 (555) 123-4567</span>
+              <span>+91-9825597662</span>
             </div>
             <div className="flex items-center text-gray-600 text-sm">
               <Mail className="h-4 w-4 mr-1" />
-              <span>info@intellivoxai.com</span>
+              <span>info@intellivoxai.in</span>
             </div>
           </div>
 
