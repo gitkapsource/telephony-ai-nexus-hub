@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Menu, X, Phone, Mail } from 'lucide-react';
 
@@ -18,7 +19,7 @@ const Navigation = () => {
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
             <h1 className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-              IntelliVoxAI
+              IntelVoiz
             </h1>
           </div>
           
