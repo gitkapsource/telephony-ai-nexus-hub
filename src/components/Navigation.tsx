@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Menu, X, Phone, Mail } from 'lucide-react';
 
@@ -59,7 +58,7 @@ const Navigation = () => {
             </div>
             <div className="flex items-center text-gray-600 text-sm">
               <Mail className="h-4 w-4 mr-1" />
-              <span>info@intellivoxai.in</span>
+              <span>info@intelvoiz.com</span>
             </div>
           </div>
 

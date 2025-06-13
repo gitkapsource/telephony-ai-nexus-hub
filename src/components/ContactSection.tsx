@@ -1,5 +1,3 @@
-
-
 import React, { useState } from 'react';
 import { Phone, Mail, Send } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
@@ -119,7 +117,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <div className="font-semibold text-gray-900">Email</div>
-                  <div className="text-gray-600">info@intellvoiz.in</div>
+                  <div className="text-gray-600">info@intelvoiz.com</div>
                 </div>
               </div>
             </div>
@@ -235,4 +233,3 @@ const ContactSection = () => {
 };
 
 export default ContactSection;
-
