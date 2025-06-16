@@ -1,9 +1,9 @@
 
 import React from 'react';
-import { Phone, Bot, Zap } from 'lucide-react';
+import { Phone, Bot, Zap, Cloud, Settings, MessageSquare } from 'lucide-react';
 
 const ServicesSection = () => {
-  const services = [
+  const mainServices = [
     {
       icon: Phone,
       title: "IP Telephony Solutions",
@@ -24,6 +24,46 @@ const ServicesSection = () => {
     }
   ];
 
+  const servicesPortfolio = [
+    {
+      icon: Settings,
+      title: "Platform Onboarding",
+      services: ["3CX", "Twilio", "N8N", "Amazon Connect"]
+    },
+    {
+      icon: Bot,
+      title: "Voice Bots",
+      services: ["N8N with VAPI", "N8N with Twilio"]
+    },
+    {
+      icon: Phone,
+      title: "VoIP Consulting & Support",
+      services: [
+        "FreeSWITCH Application & Support",
+        "Asterisk Support",
+        "OpenSIPS/Kamailio Configuration & Support",
+        "Amazon Connect Consulting Service",
+        "SIP Trunking Optimization",
+        "Call Centre Setup"
+      ]
+    },
+    {
+      icon: MessageSquare,
+      title: "Conversational AI/Generative AI",
+      services: ["Google Dialogflow CX"]
+    },
+    {
+      icon: Bot,
+      title: "Agentic AI",
+      services: ["N8N.com", "make.com"]
+    },
+    {
+      icon: Cloud,
+      title: "Cloud Services",
+      services: ["AWS Cloud Professional Services"]
+    }
+  ];
+
   return (
     <section id="services" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -37,8 +77,9 @@ const ServicesSection = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {services.map((service, index) => (
+        {/* Main Services */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
+          {mainServices.map((service, index) => (
             <div 
               key={index}
               className="bg-white border border-gray-200 rounded-xl p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group"
@@ -65,6 +106,45 @@ const ServicesSection = () => {
               </ul>
             </div>
           ))}
+        </div>
+
+        {/* Services Portfolio */}
+        <div className="bg-gray-50 rounded-2xl p-8 lg:p-12">
+          <div className="text-center mb-12">
+            <h3 className="text-3xl font-bold text-gray-900 mb-4">
+              Services Portfolio
+            </h3>
+            <p className="text-lg text-gray-600">
+              Specialized expertise across multiple platforms and technologies
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {servicesPortfolio.map((category, index) => (
+              <div 
+                key={index}
+                className="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow duration-300"
+              >
+                <div className="flex items-center mb-4">
+                  <div className="flex items-center justify-center w-12 h-12 bg-gradient-to-br from-blue-50 to-purple-50 rounded-lg mr-4">
+                    <category.icon className="h-6 w-6 text-blue-600" />
+                  </div>
+                  <h4 className="text-lg font-semibold text-gray-900">
+                    {category.title}
+                  </h4>
+                </div>
+                
+                <ul className="space-y-3">
+                  {category.services.map((service, serviceIndex) => (
+                    <li key={serviceIndex} className="flex items-start text-sm text-gray-700">
+                      <div className="w-1.5 h-1.5 bg-blue-600 rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                      <span className="leading-relaxed">{service}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
