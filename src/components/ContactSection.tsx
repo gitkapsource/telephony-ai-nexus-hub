@@ -80,9 +80,9 @@ const ContactSection = () => {
     <section id="contact" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">
+          <h1 className="text-4xl font-bold text-gray-900 mb-4">
             Contact Our VoIP & Voice AI Experts
-          </h2>
+          </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Ready to transform your business communication with VoIP and Voice AI? Contact our experts 
             for a free consultation and custom IP telephony solution design.
