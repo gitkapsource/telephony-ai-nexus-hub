@@ -93,7 +93,7 @@ const ContactSection = () => {
           <div className="space-y-8">
             <div>
               <h3 className="text-2xl font-semibold text-gray-900 mb-6">
-                Let's Discuss Your VoIP Project
+                Let's Discuss Your VoIP/AI Project
               </h3>
               <p className="text-gray-600 mb-8 leading-relaxed">
                 Whether you're looking to upgrade your phone system to VoIP, implement Voice AI automation, 
