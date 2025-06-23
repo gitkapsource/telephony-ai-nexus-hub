@@ -6,61 +6,61 @@ const ServicesSection = () => {
   const mainServices = [
     {
       icon: Phone,
-      title: "IP Telephony Solutions",
-      description: "Complete VoIP infrastructure setup, migration from traditional systems, and ongoing maintenance for crystal-clear communication.",
+      title: "VoIP & IP Telephony Solutions",
+      description: "Complete VoIP infrastructure setup, migration from traditional phone systems, and ongoing maintenance for crystal-clear business communication.",
       features: ["VoIP System Design", "PBX Implementation", "SIP Trunking", "Quality Assurance"]
     },
     {
       icon: Bot,
-      title: "AI Automation Services",
-      description: "Intelligent automation solutions that streamline business processes, reduce costs, and improve operational efficiency.",
-      features: ["Process Automation", "Chatbot Development", "AI Integration", "Workflow Optimization"]
+      title: "Voice AI & Chat Bot Services",
+      description: "Intelligent Voice AI and Chat Bot automation solutions that streamline business processes, reduce costs, and improve customer experience.",
+      features: ["Voice Bot Development", "Chat Bot Integration", "AI Automation", "Workflow Optimization"]
     },
     {
       icon: Zap,
-      title: "Performance Optimization",
-      description: "Continuous monitoring and optimization to ensure peak performance of your communication infrastructure.",
-      features: ["Network Monitoring", "Performance Analytics", "Capacity Planning", "Optimization Reports"]
+      title: "VoIP Performance Optimization",
+      description: "Continuous monitoring and optimization to ensure peak performance of your VoIP and IP telephony communication infrastructure.",
+      features: ["Network Monitoring", "Performance Analytics", "Capacity Planning", "VoIP Optimization Reports"]
     }
   ];
 
   const servicesPortfolio = [
     {
       icon: Settings,
-      title: "Platform Onboarding",
-      services: ["3CX", "Twilio", "N8N", "Amazon Connect"]
+      title: "VoIP Platform Onboarding",
+      services: ["3CX VoIP Systems", "Twilio Voice API", "N8N Automation", "Amazon Connect"]
     },
     {
       icon: Bot,
-      title: "Voice Bots",
-      services: ["N8N with VAPI", "N8N with Twilio"]
+      title: "Voice AI & Voice Bots",
+      services: ["N8N with VAPI Integration", "N8N with Twilio Voice"]
     },
     {
       icon: Phone,
-      title: "VoIP Consulting & Support",
+      title: "VoIP Consulting & Technical Support",
       services: [
         "FreeSWITCH Application & Support",
-        "Asterisk Support",
+        "Asterisk VoIP Support",
         "OpenSIPS/Kamailio Configuration & Support",
         "Amazon Connect Consulting Service",
         "SIP Trunking Optimization",
-        "Call Centre Setup"
+        "VoIP Call Centre Setup"
       ]
     },
     {
       icon: MessageSquare,
-      title: "Conversational AI/Generative AI",
-      services: ["Google Dialogflow CX"]
+      title: "Conversational AI & Chat Bots",
+      services: ["Google Dialogflow CX", "Custom Chat Bot Development"]
     },
     {
       icon: Bot,
-      title: "Agentic AI",
-      services: ["N8N.com", "make.com"]
+      title: "AI Automation & Agentic AI",
+      services: ["N8N.com Workflows", "make.com Integration"]
     },
     {
       icon: Cloud,
-      title: "Cloud Services",
-      services: ["AWS Cloud Professional Services"]
+      title: "Cloud VoIP Services",
+      services: ["AWS Cloud Professional Services", "Cloud VoIP Migration"]
     }
   ];
 
@@ -69,11 +69,11 @@ const ServicesSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            Our Expert Services
+            Expert VoIP, IP Telephony & AI Services
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Comprehensive consulting solutions designed to modernize your business 
-            communication and automate complex processes with cutting-edge technology.
+            Comprehensive VoIP consulting and Voice AI solutions designed to modernize your business 
+            communication and automate complex processes with cutting-edge IP telephony technology.
           </p>
         </div>
 
@@ -112,10 +112,10 @@ const ServicesSection = () => {
         <div className="bg-gray-50 rounded-2xl p-8 lg:p-12">
           <div className="text-center mb-12">
             <h3 className="text-3xl font-bold text-gray-900 mb-4">
-              Services Portfolio
+              VoIP & Voice AI Services Portfolio
             </h3>
             <p className="text-lg text-gray-600">
-              Specialized expertise across multiple platforms and technologies
+              Specialized expertise across multiple VoIP platforms, Voice AI technologies, and automation tools
             </p>
           </div>
 

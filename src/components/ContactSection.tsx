@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Phone, Mail, Send } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
@@ -80,11 +81,11 @@ const ContactSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            Get in Touch
+            Contact Our VoIP & Voice AI Experts
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Ready to transform your business communication? Contact our experts 
-            for a free consultation and custom solution design.
+            Ready to transform your business communication with VoIP and Voice AI? Contact our experts 
+            for a free consultation and custom IP telephony solution design.
           </p>
         </div>
 
@@ -92,11 +93,12 @@ const ContactSection = () => {
           <div className="space-y-8">
             <div>
               <h3 className="text-2xl font-semibold text-gray-900 mb-6">
-                Let's Discuss Your Project
+                Let's Discuss Your VoIP Project
               </h3>
               <p className="text-gray-600 mb-8 leading-relaxed">
-                Whether you're looking to upgrade your phone system, implement AI automation, 
-                or need expert guidance on communication strategy, our team is here to help.
+                Whether you're looking to upgrade your phone system to VoIP, implement Voice AI automation, 
+                or need expert guidance on IP telephony strategy, our certified consultants are here to help 
+                with comprehensive VoIP solutions.
               </p>
             </div>
 
@@ -106,7 +108,7 @@ const ContactSection = () => {
                   <Phone className="h-6 w-6 text-blue-600" />
                 </div>
                 <div>
-                  <div className="font-semibold text-gray-900">Phone</div>
+                  <div className="font-semibold text-gray-900">VoIP Consultation Phone</div>
                   <div className="text-gray-600">+91-9825597662</div>
                 </div>
               </div>
@@ -116,7 +118,7 @@ const ContactSection = () => {
                   <Mail className="h-6 w-6 text-blue-600" />
                 </div>
                 <div>
-                  <div className="font-semibold text-gray-900">Email</div>
+                  <div className="font-semibold text-gray-900">Email Support</div>
                   <div className="text-gray-600">info@intelvoiz.com</div>
                 </div>
               </div>
@@ -185,10 +187,10 @@ const ContactSection = () => {
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                   >
                     <option value="">Select a service</option>
-                    <option value="ip-telephony">IP Telephony Solutions</option>
-                    <option value="ai-automation">AI Automation Services</option>
-                    <option value="system-integration">System Integration</option>
-                    <option value="optimization">Performance Optimization</option>
+                    <option value="voip-telephony">VoIP & IP Telephony Solutions</option>
+                    <option value="voice-ai">Voice AI & Chat Bot Services</option>
+                    <option value="system-integration">VoIP System Integration</option>
+                    <option value="optimization">VoIP Performance Optimization</option>
                     <option value="voip-support">VoIP Troubleshooting & Support</option>
                   </select>
                 </div>
@@ -206,7 +208,7 @@ const ContactSection = () => {
                   value={formData.message}
                   onChange={handleInputChange}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none"
-                  placeholder="Tell us about your project requirements..."
+                  placeholder="Tell us about your VoIP project requirements..."
                 ></textarea>
               </div>
 
@@ -220,7 +222,7 @@ const ContactSection = () => {
                 ) : (
                   <>
                     <Send className="h-5 w-5" />
-                    <span>Send Message</span>
+                    <span>Send VoIP Inquiry</span>
                   </>
                 )}
               </button>
