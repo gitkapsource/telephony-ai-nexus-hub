@@ -107,7 +107,7 @@ const ContactSection = () => {
                   <Phone className="h-6 w-6 text-blue-600" />
                 </div>
                 <div>
-                  <div className="font-semibold text-gray-900">VoIP Consultation Phone</div>
+                  <div className="font-semibold text-gray-900">Consultation Phone</div>
                   <div className="text-gray-600">+91-9825597662</div>
                 </div>
               </div>
