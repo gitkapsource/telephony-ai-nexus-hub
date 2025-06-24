@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Phone, Mail, Send } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
@@ -208,7 +207,7 @@ const ContactSection = () => {
                   value={formData.message}
                   onChange={handleInputChange}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none"
-                  placeholder="Tell us about your VoIP project requirements..."
+                  placeholder="Tell us about your Voice AI/VoIP project requirements..."
                 ></textarea>
               </div>
 
@@ -222,7 +221,7 @@ const ContactSection = () => {
                 ) : (
                   <>
                     <Send className="h-5 w-5" />
-                    <span>Send VoIP Inquiry</span>
+                    <span>Send Voice AI/VoIP Inquiry</span>
                   </>
                 )}
               </button>

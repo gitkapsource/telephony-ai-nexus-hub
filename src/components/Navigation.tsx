@@ -1,9 +1,23 @@
-
 import React, { useState } from 'react';
 import { Menu, X, Phone, Mail } from 'lucide-react';
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isIndustriesOpen, setIsIndustriesOpen] = useState(false);
+  const [isMobileIndustriesOpen, setIsMobileIndustriesOpen] = useState(false);
+
+  const industries = [
+    'Real Estate',
+    'Healthcare',
+    'Recruitment',
+    'Restaurants',
+    'E-commerce',
+    'Travel Hospitality',
+    'Logistics',
+    'Solar',
+    'Mortgage',
+    'Car Dealerships',
+  ];
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -39,6 +53,32 @@ const Navigation = () => {
               >
                 Services
               </button>
+              <div className="relative inline-block text-left"
+                onMouseEnter={() => setIsIndustriesOpen(true)}
+                onMouseLeave={() => setIsIndustriesOpen(false)}
+              >
+                <button
+                  className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors flex items-center"
+                  type="button"
+                >
+                  AI Automation Industries
+                  <svg className="ml-1 h-4 w-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" /></svg>
+                </button>
+                {isIndustriesOpen && (
+                  <div className="absolute left-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 z-50">
+                    <div className="py-1">
+                      {industries.map((item) => (
+                        <div
+                          key={item}
+                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 cursor-pointer"
+                        >
+                          {item}
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </div>
               <button 
                 onClick={() => scrollToSection('about')}
                 className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors"
@@ -91,6 +131,27 @@ const Navigation = () => {
             >
               Services
             </button>
+            <div>
+              <button
+                onClick={() => setIsMobileIndustriesOpen((prev) => !prev)}
+                className="flex items-center justify-between w-full px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-600 text-left"
+              >
+                AI Automation Industries
+                <svg className={`ml-2 h-4 w-4 transform transition-transform ${isMobileIndustriesOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" /></svg>
+              </button>
+              {isMobileIndustriesOpen && (
+                <div className="pl-4">
+                  {industries.map((item) => (
+                    <div
+                      key={item}
+                      className="block px-3 py-2 text-base text-gray-700 hover:bg-blue-50 rounded cursor-pointer"
+                    >
+                      {item}
+                    </div>
+                  ))}
+                </div>
+              )}
+            </div>
             <button 
               onClick={() => scrollToSection('about')}
               className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-600 w-full text-left"
