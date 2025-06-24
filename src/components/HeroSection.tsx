@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ArrowRight, CheckCircle } from 'lucide-react';
 
@@ -67,7 +66,7 @@ const HeroSection = () => {
               />
               <div className="absolute -top-6 -right-6 bg-white p-6 rounded-lg shadow-lg">
                 <div className="text-3xl font-bold text-purple-600">Expert</div>
-                <div className="text-gray-600">VoIP Consulting</div>
+                <div className="text-gray-600">Voice AI/VoIP Consulting</div>
               </div>
             </div>
           </div>
