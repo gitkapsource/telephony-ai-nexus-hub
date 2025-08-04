@@ -1,0 +1,235 @@
+import React from 'react';
+import { Calendar, Clock, ArrowRight, Phone, Bot, Cloud, Shield } from 'lucide-react';
+
+const BlogSection = () => {
+  const blogPosts = [
+    {
+      id: 1,
+      title: "Complete Guide to VoIP Migration in India: Step-by-Step Process",
+      excerpt: "Learn the complete process of migrating from traditional phone systems to VoIP. Discover how Indian businesses can save up to 60% on communication costs with proper VoIP implementation.",
+      category: "VoIP Solutions",
+      date: "2024-01-15",
+      readTime: "8 min read",
+      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=400&h=250&fit=crop",
+      tags: ["VoIP Migration", "India", "Cost Savings", "Implementation"],
+      featured: true
+    },
+    {
+      id: 2,
+      title: "FreeSWITCH vs Asterisk: Which VoIP Platform is Better for Indian Businesses?",
+      excerpt: "Comprehensive comparison of FreeSWITCH and Asterisk for Indian businesses. Understand the pros, cons, and best use cases for each platform in the Indian market.",
+      category: "VoIP Platforms",
+      date: "2024-01-12",
+      readTime: "6 min read",
+      image: "https://images.unsplash.com/photo-1551434678-e076c223a692?w=400&h=250&fit=crop",
+      tags: ["FreeSWITCH", "Asterisk", "Comparison", "VoIP Platforms"]
+    },
+    {
+      id: 3,
+      title: "Amazon Connect Implementation Guide: Setting Up Cloud Contact Center in India",
+      excerpt: "Step-by-step guide to implementing Amazon Connect for Indian contact centers. Learn about AWS integration, cost optimization, and best practices for Indian businesses.",
+      category: "Cloud VoIP",
+      date: "2024-01-10",
+      readTime: "10 min read",
+      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=250&fit=crop",
+      tags: ["Amazon Connect", "AWS", "Contact Center", "Cloud VoIP"]
+    },
+    {
+      id: 4,
+      title: "Voice AI Revolution: How Indian Businesses are Using Voice Bots to Increase Sales",
+      excerpt: "Discover how Indian businesses are leveraging Voice AI to automate customer service, increase sales, and improve customer experience. Real case studies and implementation strategies.",
+      category: "Voice AI",
+      date: "2024-01-08",
+      readTime: "7 min read",
+      image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=400&h=250&fit=crop",
+      tags: ["Voice AI", "Voice Bots", "Customer Service", "Automation"]
+    },
+    {
+      id: 5,
+      title: "Google Dialogflow Implementation: Building Intelligent Chat Bots for Indian Markets",
+      excerpt: "Complete guide to implementing Google Dialogflow for Indian businesses. Learn about multilingual support, local language integration, and cost-effective AI solutions.",
+      category: "Voice AI",
+      date: "2024-01-05",
+      readTime: "9 min read",
+      image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=400&h=250&fit=crop",
+      tags: ["Google Dialogflow", "Chat Bots", "AI", "Multilingual"]
+    },
+    {
+      id: 6,
+      title: "SIP Trunking Benefits for Indian Businesses: Cost Savings and Scalability",
+      excerpt: "Understand how SIP trunking can reduce communication costs by up to 70% for Indian businesses. Learn about implementation, security, and scalability benefits.",
+      category: "VoIP Solutions",
+      date: "2024-01-03",
+      readTime: "5 min read",
+      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=250&fit=crop",
+      tags: ["SIP Trunking", "Cost Savings", "Scalability", "VoIP"]
+    }
+  ];
+
+  const categories = [
+    { name: "VoIP Solutions", icon: Phone, count: 12 },
+    { name: "Voice AI", icon: Bot, count: 8 },
+    { name: "Cloud VoIP", icon: Cloud, count: 6 },
+    { name: "VoIP Security", icon: Shield, count: 4 }
+  ];
+
+  return (
+    <section id="blog" className="py-12 bg-gray-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-16">
+          <h1 className="text-4xl font-bold text-gray-900 mb-4">
+            VoIP & Voice AI Blog - Expert Insights
+          </h1>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            Stay updated with the latest trends in VoIP, Voice AI, and telecommunications technology. 
+            Expert insights, implementation guides, and industry best practices for Indian businesses.
+          </p>
+        </div>
+
+        {/* Featured Post */}
+        <div className="mb-16">
+          <h2 className="text-2xl font-bold text-gray-900 mb-8">Featured Article</h2>
+          <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
+            <div className="grid lg:grid-cols-2">
+              <div className="relative">
+                <img 
+                  src={blogPosts[0].image}
+                  alt={blogPosts[0].title}
+                  className="w-full h-64 lg:h-full object-cover"
+                />
+                <div className="absolute top-4 left-4 bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                  Featured
+                </div>
+              </div>
+              <div className="p-8 lg:p-12">
+                <div className="flex items-center space-x-4 mb-4">
+                  <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-semibold">
+                    {blogPosts[0].category}
+                  </span>
+                  <div className="flex items-center space-x-2 text-gray-500 text-sm">
+                    <Calendar className="h-4 w-4" />
+                    <span>{blogPosts[0].date}</span>
+                  </div>
+                  <div className="flex items-center space-x-2 text-gray-500 text-sm">
+                    <Clock className="h-4 w-4" />
+                    <span>{blogPosts[0].readTime}</span>
+                  </div>
+                </div>
+                
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                  {blogPosts[0].title}
+                </h3>
+                
+                <p className="text-gray-600 mb-6 leading-relaxed">
+                  {blogPosts[0].excerpt}
+                </p>
+                
+                <div className="flex flex-wrap gap-2 mb-6">
+                  {blogPosts[0].tags.map((tag, index) => (
+                    <span key={index} className="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+                
+                <button className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-3 rounded-lg font-semibold hover:from-blue-700 hover:to-purple-700 transition-all duration-300 flex items-center space-x-2">
+                  <span>Read Full Article</span>
+                  <ArrowRight className="h-4 w-4" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Categories */}
+        <div className="mb-12">
+          <h2 className="text-2xl font-bold text-gray-900 mb-8">Browse by Category</h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {categories.map((category, index) => (
+              <div key={index} className="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow duration-300 cursor-pointer">
+                <div className="flex items-center justify-center w-12 h-12 bg-gradient-to-br from-blue-100 to-purple-100 rounded-lg mb-4">
+                  <category.icon className="h-6 w-6 text-blue-600" />
+                </div>
+                <h3 className="font-semibold text-gray-900 mb-2">{category.name}</h3>
+                <p className="text-gray-600 text-sm">{category.count} articles</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Recent Posts */}
+        <div>
+          <h2 className="text-2xl font-bold text-gray-900 mb-8">Recent Articles</h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {blogPosts.slice(1, 7).map((post) => (
+              <article key={post.id} className="bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden">
+                <img 
+                  src={post.image}
+                  alt={post.title}
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-6">
+                  <div className="flex items-center space-x-4 mb-4">
+                    <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-semibold">
+                      {post.category}
+                    </span>
+                    <div className="flex items-center space-x-2 text-gray-500 text-sm">
+                      <Calendar className="h-4 w-4" />
+                      <span>{post.date}</span>
+                    </div>
+                  </div>
+                  
+                  <h3 className="text-lg font-semibold text-gray-900 mb-3 line-clamp-2">
+                    {post.title}
+                  </h3>
+                  
+                  <p className="text-gray-600 mb-4 text-sm leading-relaxed line-clamp-3">
+                    {post.excerpt}
+                  </p>
+                  
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center space-x-2 text-gray-500 text-sm">
+                      <Clock className="h-4 w-4" />
+                      <span>{post.readTime}</span>
+                    </div>
+                    <button className="text-blue-600 hover:text-blue-700 font-semibold text-sm flex items-center space-x-1">
+                      <span>Read More</span>
+                      <ArrowRight className="h-4 w-4" />
+                    </button>
+                  </div>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+
+        {/* Newsletter Signup */}
+        <div className="mt-16 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 lg:p-12 text-white">
+          <div className="text-center max-w-2xl mx-auto">
+            <h3 className="text-2xl font-bold mb-4">
+              Stay Updated with VoIP & Voice AI Trends
+            </h3>
+            <p className="text-blue-100 mb-6">
+              Get the latest insights on VoIP technology, Voice AI developments, and industry best practices delivered to your inbox.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+              <input 
+                type="email" 
+                placeholder="Enter your email"
+                className="flex-1 px-4 py-3 rounded-lg text-gray-900 focus:ring-2 focus:ring-white focus:border-transparent"
+              />
+              <button className="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                Subscribe
+              </button>
+            </div>
+            <p className="text-blue-200 text-sm mt-4">
+              Join 500+ Indian businesses already subscribed to our VoIP insights
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default BlogSection; 
