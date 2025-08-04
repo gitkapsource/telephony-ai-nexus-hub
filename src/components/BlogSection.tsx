@@ -1,10 +1,11 @@
 import React from 'react';
 import { Calendar, Clock, ArrowRight, Phone, Bot, Cloud, Shield } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const BlogSection = () => {
   const blogPosts = [
     {
-      id: 1,
+      id: "1",
       title: "Complete Guide to VoIP Migration in India: Step-by-Step Process",
       excerpt: "Learn the complete process of migrating from traditional phone systems to VoIP. Discover how Indian businesses can save up to 60% on communication costs with proper VoIP implementation.",
       category: "VoIP Solutions",
@@ -15,7 +16,7 @@ const BlogSection = () => {
       featured: true
     },
     {
-      id: 2,
+      id: "2",
       title: "FreeSWITCH vs Asterisk: Which VoIP Platform is Better for Indian Businesses?",
       excerpt: "Comprehensive comparison of FreeSWITCH and Asterisk for Indian businesses. Understand the pros, cons, and best use cases for each platform in the Indian market.",
       category: "VoIP Platforms",
@@ -25,7 +26,7 @@ const BlogSection = () => {
       tags: ["FreeSWITCH", "Asterisk", "Comparison", "VoIP Platforms"]
     },
     {
-      id: 3,
+      id: "3",
       title: "Amazon Connect Implementation Guide: Setting Up Cloud Contact Center in India",
       excerpt: "Step-by-step guide to implementing Amazon Connect for Indian contact centers. Learn about AWS integration, cost optimization, and best practices for Indian businesses.",
       category: "Cloud VoIP",
@@ -35,7 +36,7 @@ const BlogSection = () => {
       tags: ["Amazon Connect", "AWS", "Contact Center", "Cloud VoIP"]
     },
     {
-      id: 4,
+      id: "4",
       title: "Voice AI Revolution: How Indian Businesses are Using Voice Bots to Increase Sales",
       excerpt: "Discover how Indian businesses are leveraging Voice AI to automate customer service, increase sales, and improve customer experience. Real case studies and implementation strategies.",
       category: "Voice AI",
@@ -45,7 +46,7 @@ const BlogSection = () => {
       tags: ["Voice AI", "Voice Bots", "Customer Service", "Automation"]
     },
     {
-      id: 5,
+      id: "5",
       title: "Google Dialogflow Implementation: Building Intelligent Chat Bots for Indian Markets",
       excerpt: "Complete guide to implementing Google Dialogflow for Indian businesses. Learn about multilingual support, local language integration, and cost-effective AI solutions.",
       category: "Voice AI",
@@ -55,7 +56,7 @@ const BlogSection = () => {
       tags: ["Google Dialogflow", "Chat Bots", "AI", "Multilingual"]
     },
     {
-      id: 6,
+      id: "6",
       title: "SIP Trunking Benefits for Indian Businesses: Cost Savings and Scalability",
       excerpt: "Understand how SIP trunking can reduce communication costs by up to 70% for Indian businesses. Learn about implementation, security, and scalability benefits.",
       category: "VoIP Solutions",
@@ -132,10 +133,13 @@ const BlogSection = () => {
                   ))}
                 </div>
                 
-                <button className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-3 rounded-lg font-semibold hover:from-blue-700 hover:to-purple-700 transition-all duration-300 flex items-center space-x-2">
+                <Link 
+                  to={`/blog/${blogPosts[0].id}`}
+                  className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-3 rounded-lg font-semibold hover:from-blue-700 hover:to-purple-700 transition-all duration-300 flex items-center space-x-2 inline-flex"
+                >
                   <span>Read Full Article</span>
                   <ArrowRight className="h-4 w-4" />
-                </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -192,10 +196,13 @@ const BlogSection = () => {
                       <Clock className="h-4 w-4" />
                       <span>{post.readTime}</span>
                     </div>
-                    <button className="text-blue-600 hover:text-blue-700 font-semibold text-sm flex items-center space-x-1">
+                    <Link 
+                      to={`/blog/${post.id}`}
+                      className="text-blue-600 hover:text-blue-700 font-semibold text-sm flex items-center space-x-1"
+                    >
                       <span>Read More</span>
                       <ArrowRight className="h-4 w-4" />
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </article>
