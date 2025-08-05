@@ -69,12 +69,14 @@ const Navigation = () => {
                   <div className="absolute left-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 z-50">
                     <div className="py-1">
                       {industries.map((item) => (
-                        <div
+                        <Link
                           key={item}
+                          to={`/industries/${item.toLowerCase().replace(/ /g, '-').replace(/[^a-z0-9-]/g, '')}`}
                           className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 cursor-pointer"
+                          onClick={() => setIsIndustriesOpen(false)}
                         >
                           {item}
-                        </div>
+                        </Link>
                       ))}
                     </div>
                   </div>
@@ -149,12 +151,14 @@ const Navigation = () => {
               {isMobileIndustriesOpen && (
                 <div className="pl-4">
                   {industries.map((item) => (
-                    <div
+                    <Link
                       key={item}
+                      to={`/industries/${item.toLowerCase().replace(/ /g, '-').replace(/[^a-z0-9-]/g, '')}`}
                       className="block px-3 py-2 text-base text-gray-700 hover:bg-blue-50 rounded cursor-pointer"
+                      onClick={() => setIsMenuOpen(false)}
                     >
                       {item}
-                    </div>
+                    </Link>
                   ))}
                 </div>
               )}
