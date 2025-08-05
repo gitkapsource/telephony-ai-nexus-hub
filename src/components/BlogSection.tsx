@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Calendar, Clock, ArrowRight, Phone, Bot, Cloud, Shield } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const BlogSection = () => {
+  const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
+
   const blogPosts = [
     {
       id: "1",
@@ -68,11 +70,19 @@ const BlogSection = () => {
   ];
 
   const categories = [
-    { name: "VoIP Solutions", icon: Phone, count: 12 },
-    { name: "Voice AI", icon: Bot, count: 8 },
-    { name: "Cloud VoIP", icon: Cloud, count: 6 },
-    { name: "VoIP Security", icon: Shield, count: 4 }
+    { name: "VoIP Solutions", icon: Phone, count: 2 },
+    { name: "Voice AI", icon: Bot, count: 2 },
+    { name: "Cloud VoIP", icon: Cloud, count: 1 },
+    { name: "VoIP Platforms", icon: Shield, count: 1 }
   ];
+
+  // Filter posts based on selected category
+  const filteredPosts = selectedCategory 
+    ? blogPosts.filter(post => post.category === selectedCategory)
+    : blogPosts;
+
+  // Get featured post (always show first post as featured)
+  const featuredPost = blogPosts[0];
 
   return (
     <section id="blog" className="py-12 bg-gray-50">
@@ -94,8 +104,8 @@ const BlogSection = () => {
             <div className="grid lg:grid-cols-2">
               <div className="relative">
                 <img 
-                  src={blogPosts[0].image}
-                  alt={blogPosts[0].title}
+                  src={featuredPost.image}
+                  alt={featuredPost.title}
                   className="w-full h-64 lg:h-full object-cover"
                 />
                 <div className="absolute top-4 left-4 bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
@@ -105,28 +115,28 @@ const BlogSection = () => {
               <div className="p-8 lg:p-12">
                 <div className="flex items-center space-x-4 mb-4">
                   <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-semibold">
-                    {blogPosts[0].category}
+                    {featuredPost.category}
                   </span>
                   <div className="flex items-center space-x-2 text-gray-500 text-sm">
                     <Calendar className="h-4 w-4" />
-                    <span>{blogPosts[0].date}</span>
+                    <span>{featuredPost.date}</span>
                   </div>
                   <div className="flex items-center space-x-2 text-gray-500 text-sm">
                     <Clock className="h-4 w-4" />
-                    <span>{blogPosts[0].readTime}</span>
+                    <span>{featuredPost.readTime}</span>
                   </div>
                 </div>
                 
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                  {blogPosts[0].title}
+                  {featuredPost.title}
                 </h3>
                 
                 <p className="text-gray-600 mb-6 leading-relaxed">
-                  {blogPosts[0].excerpt}
+                  {featuredPost.excerpt}
                 </p>
                 
                 <div className="flex flex-wrap gap-2 mb-6">
-                  {blogPosts[0].tags.map((tag, index) => (
+                  {featuredPost.tags.map((tag, index) => (
                     <span key={index} className="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs">
                       {tag}
                     </span>
@@ -134,7 +144,7 @@ const BlogSection = () => {
                 </div>
                 
                 <Link 
-                  to={`/blog/${blogPosts[0].id}`}
+                  to={`/blog/${featuredPost.id}`}
                   className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-3 rounded-lg font-semibold hover:from-blue-700 hover:to-purple-700 transition-all duration-300 flex items-center space-x-2 inline-flex"
                 >
                   <span>Read Full Article</span>
@@ -150,64 +160,102 @@ const BlogSection = () => {
           <h2 className="text-2xl font-bold text-gray-900 mb-8">Browse by Category</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {categories.map((category, index) => (
-              <div key={index} className="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow duration-300 cursor-pointer">
+              <button
+                key={index}
+                onClick={() => setSelectedCategory(selectedCategory === category.name ? null : category.name)}
+                className={`bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-all duration-300 cursor-pointer border-2 ${
+                  selectedCategory === category.name 
+                    ? 'border-blue-500 bg-blue-50' 
+                    : 'border-transparent'
+                }`}
+              >
                 <div className="flex items-center justify-center w-12 h-12 bg-gradient-to-br from-blue-100 to-purple-100 rounded-lg mb-4">
                   <category.icon className="h-6 w-6 text-blue-600" />
                 </div>
                 <h3 className="font-semibold text-gray-900 mb-2">{category.name}</h3>
                 <p className="text-gray-600 text-sm">{category.count} articles</p>
-              </div>
+                {selectedCategory === category.name && (
+                  <div className="mt-3 text-blue-600 text-sm font-medium">
+                    ✓ Selected
+                  </div>
+                )}
+              </button>
             ))}
           </div>
         </div>
 
         {/* Recent Posts */}
         <div>
-          <h2 className="text-2xl font-bold text-gray-900 mb-8">Recent Articles</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {blogPosts.slice(1, 7).map((post) => (
-              <article key={post.id} className="bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden">
-                <img 
-                  src={post.image}
-                  alt={post.title}
-                  className="w-full h-48 object-cover"
-                />
-                <div className="p-6">
-                  <div className="flex items-center space-x-4 mb-4">
-                    <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-semibold">
-                      {post.category}
-                    </span>
-                    <div className="flex items-center space-x-2 text-gray-500 text-sm">
-                      <Calendar className="h-4 w-4" />
-                      <span>{post.date}</span>
-                    </div>
-                  </div>
-                  
-                  <h3 className="text-lg font-semibold text-gray-900 mb-3 line-clamp-2">
-                    {post.title}
-                  </h3>
-                  
-                  <p className="text-gray-600 mb-4 text-sm leading-relaxed line-clamp-3">
-                    {post.excerpt}
-                  </p>
-                  
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center space-x-2 text-gray-500 text-sm">
-                      <Clock className="h-4 w-4" />
-                      <span>{post.readTime}</span>
-                    </div>
-                    <Link 
-                      to={`/blog/${post.id}`}
-                      className="text-blue-600 hover:text-blue-700 font-semibold text-sm flex items-center space-x-1"
-                    >
-                      <span>Read More</span>
-                      <ArrowRight className="h-4 w-4" />
-                    </Link>
-                  </div>
-                </div>
-              </article>
-            ))}
+          <div className="flex items-center justify-between mb-8">
+            <h2 className="text-2xl font-bold text-gray-900">
+              {selectedCategory ? `${selectedCategory} Articles` : 'Recent Articles'}
+            </h2>
+            {selectedCategory && (
+              <button
+                onClick={() => setSelectedCategory(null)}
+                className="text-blue-600 hover:text-blue-700 font-semibold text-sm"
+              >
+                Clear Filter
+              </button>
+            )}
           </div>
+          
+          {filteredPosts.length === 0 ? (
+            <div className="text-center py-12">
+              <p className="text-gray-500 text-lg">No articles found in this category.</p>
+              <button
+                onClick={() => setSelectedCategory(null)}
+                className="mt-4 text-blue-600 hover:text-blue-700 font-semibold"
+              >
+                View All Articles
+              </button>
+            </div>
+          ) : (
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {filteredPosts.slice(1).map((post) => (
+                <article key={post.id} className="bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden">
+                  <img 
+                    src={post.image}
+                    alt={post.title}
+                    className="w-full h-48 object-cover"
+                  />
+                  <div className="p-6">
+                    <div className="flex items-center space-x-4 mb-4">
+                      <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-semibold">
+                        {post.category}
+                      </span>
+                      <div className="flex items-center space-x-2 text-gray-500 text-sm">
+                        <Calendar className="h-4 w-4" />
+                        <span>{post.date}</span>
+                      </div>
+                    </div>
+                    
+                    <h3 className="text-lg font-semibold text-gray-900 mb-3 line-clamp-2">
+                      {post.title}
+                    </h3>
+                    
+                    <p className="text-gray-600 mb-4 text-sm leading-relaxed line-clamp-3">
+                      {post.excerpt}
+                    </p>
+                    
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center space-x-2 text-gray-500 text-sm">
+                        <Clock className="h-4 w-4" />
+                        <span>{post.readTime}</span>
+                      </div>
+                      <Link 
+                        to={`/blog/${post.id}`}
+                        className="text-blue-600 hover:text-blue-700 font-semibold text-sm flex items-center space-x-1"
+                      >
+                        <span>Read More</span>
+                        <ArrowRight className="h-4 w-4" />
+                      </Link>
+                    </div>
+                  </div>
+                </article>
+              ))}
+            </div>
+          )}
         </div>
 
         {/* Newsletter Signup */}
