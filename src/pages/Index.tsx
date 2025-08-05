@@ -5,9 +5,11 @@ import HeroSection from '@/components/HeroSection';
 import ServicesSection from '@/components/ServicesSection';
 import AboutSection from '@/components/AboutSection';
 import BlogSection from '@/components/BlogSection';
+import LeadCaptureSection from '@/components/LeadCaptureSection';
 import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
 import SEOTracker from '@/components/SEOTracker';
+import LeadCapture from '@/components/LeadCapture';
 
 const Index = () => {
   const seoData = {
@@ -42,9 +44,11 @@ const Index = () => {
       <HeroSection />
       <ServicesSection />
       <AboutSection />
+      <LeadCaptureSection />
       <BlogSection />
       <ContactSection />
       <Footer />
+      <LeadCapture />
     </div>
   );
 };
