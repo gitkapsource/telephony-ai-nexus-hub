@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Menu, X, Phone, Mail } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -85,6 +86,12 @@ const Navigation = () => {
               >
                 About
               </button>
+              <Link 
+                to="/blog"
+                className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors"
+              >
+                Blog
+              </Link>
               <button 
                 onClick={() => scrollToSection('contact')}
                 className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors"
@@ -158,6 +165,12 @@ const Navigation = () => {
             >
               About
             </button>
+            <Link 
+              to="/blog"
+              className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-600 w-full text-left"
+            >
+              Blog
+            </Link>
             <button 
               onClick={() => scrollToSection('contact')}
               className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-600 w-full text-left"

@@ -91,10 +91,17 @@ const BlogSection = () => {
           <h1 className="text-4xl font-bold text-gray-900 mb-4">
             VoIP & Voice AI Blog - Expert Insights
           </h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-6">
             Stay updated with the latest trends in VoIP, Voice AI, and telecommunications technology. 
             Expert insights, implementation guides, and industry best practices for Indian businesses.
           </p>
+          <Link 
+            to="/blog"
+            className="inline-flex items-center bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
+          >
+            View All Blog Posts
+            <ArrowRight className="ml-2 h-4 w-4" />
+          </Link>
         </div>
 
         {/* Featured Post */}
