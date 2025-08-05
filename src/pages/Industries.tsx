@@ -17,7 +17,17 @@ const industries = [
 const Industries = () => (
   <div className="min-h-screen bg-gray-50 py-12">
     <div className="max-w-5xl mx-auto px-4">
-      <h1 className="text-4xl font-bold text-gray-900 mb-8 text-center">AI Automation Industries</h1>
+      <div className="text-center mb-8">
+        <Link to="/" className="inline-block mb-6">
+          <img 
+            src="/lovable-uploads/76923a56-250c-4961-a336-c37c70150296.png" 
+            alt="IntelVoiz" 
+            className="h-12 mx-auto hover:opacity-80 transition-opacity"
+          />
+        </Link>
+        <h1 className="text-4xl font-bold text-gray-900 mb-4">AI Automation Industries</h1>
+        <p className="text-lg text-gray-600">Discover how AI automation can transform your industry</p>
+      </div>
       <div className="grid md:grid-cols-2 gap-8">
         {industries.map((industry) => (
           <div key={industry.slug} className="bg-white rounded-lg shadow p-6 flex flex-col justify-between">

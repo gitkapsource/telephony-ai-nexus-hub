@@ -70,7 +70,16 @@ const IndustryDetail = () => {
   return (
     <div className="min-h-screen bg-gray-50 py-12">
       <div className="max-w-3xl mx-auto px-4">
-        <h1 className="text-4xl font-bold text-gray-900 mb-4">{industry.name}</h1>
+        <div className="text-center mb-8">
+          <Link to="/" className="inline-block mb-6">
+            <img 
+              src="/lovable-uploads/76923a56-250c-4961-a336-c37c70150296.png" 
+              alt="IntelVoiz" 
+              className="h-12 mx-auto hover:opacity-80 transition-opacity"
+            />
+          </Link>
+          <h1 className="text-4xl font-bold text-gray-900 mb-4">{industry.name}</h1>
+        </div>
         <p className="text-lg text-gray-700 mb-6">{industry.description}</p>
         <div className="bg-white rounded-lg shadow p-6 mb-8">
           <h2 className="text-2xl font-semibold mb-2">How We Help {industry.name} Companies</h2>
