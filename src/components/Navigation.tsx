@@ -4,9 +4,6 @@ import { Link } from 'react-router-dom';
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isIndustriesOpen, setIsIndustriesOpen] = useState(false);
-  const [isMobileIndustriesOpen, setIsMobileIndustriesOpen] = useState(false);
-  const [industriesTimeout, setIndustriesTimeout] = useState<NodeJS.Timeout | null>(null);
 
   const industries = [
     'Real Estate',
@@ -55,59 +52,12 @@ const Navigation = () => {
               >
                 Services
               </button>
-              <div className="relative inline-block text-left"
-                onMouseEnter={() => {
-                  if (industriesTimeout) {
-                    clearTimeout(industriesTimeout);
-                    setIndustriesTimeout(null);
-                  }
-                  setIsIndustriesOpen(true);
-                }}
-                onMouseLeave={() => {
-                  const timeout = setTimeout(() => {
-                    setIsIndustriesOpen(false);
-                  }, 150);
-                  setIndustriesTimeout(timeout);
-                }}
+              <button
+                onClick={() => scrollToSection('industries')}
+                className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors"
               >
-                <button
-                  className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors flex items-center"
-                  type="button"
-                >
-                  AI Automation Industries
-                  <svg className="ml-1 h-4 w-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" /></svg>
-                </button>
-                {isIndustriesOpen && (
-                  <div 
-                    className="absolute left-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 z-50"
-                    onMouseEnter={() => {
-                      if (industriesTimeout) {
-                        clearTimeout(industriesTimeout);
-                        setIndustriesTimeout(null);
-                      }
-                    }}
-                    onMouseLeave={() => {
-                      const timeout = setTimeout(() => {
-                        setIsIndustriesOpen(false);
-                      }, 150);
-                      setIndustriesTimeout(timeout);
-                    }}
-                  >
-                    <div className="py-1">
-                      {industries.map((item) => (
-                        <Link
-                          key={item}
-                          to={`/industries/${item.toLowerCase().replace(/ /g, '-').replace(/[^a-z0-9-]/g, '')}`}
-                          className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 cursor-pointer"
-                          onClick={() => setIsIndustriesOpen(false)}
-                        >
-                          {item}
-                        </Link>
-                      ))}
-                    </div>
-                  </div>
-                )}
-              </div>
+                AI Automation Industries
+              </button>
               <button 
                 onClick={() => scrollToSection('about')}
                 className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors"
@@ -166,29 +116,12 @@ const Navigation = () => {
             >
               Services
             </button>
-            <div>
-              <button
-                onClick={() => setIsMobileIndustriesOpen((prev) => !prev)}
-                className="flex items-center justify-between w-full px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-600 text-left"
-              >
-                AI Automation Industries
-                <svg className={`ml-2 h-4 w-4 transform transition-transform ${isMobileIndustriesOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" /></svg>
-              </button>
-              {isMobileIndustriesOpen && (
-                <div className="pl-4">
-                  {industries.map((item) => (
-                    <Link
-                      key={item}
-                      to={`/industries/${item.toLowerCase().replace(/ /g, '-').replace(/[^a-z0-9-]/g, '')}`}
-                      className="block px-3 py-2 text-base text-gray-700 hover:bg-blue-50 rounded cursor-pointer"
-                      onClick={() => setIsMenuOpen(false)}
-                    >
-                      {item}
-                    </Link>
-                  ))}
-                </div>
-              )}
-            </div>
+            <button 
+              onClick={() => scrollToSection('industries')}
+              className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-600 w-full text-left"
+            >
+              AI Automation Industries
+            </button>
             <button 
               onClick={() => scrollToSection('about')}
               className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-600 w-full text-left"
