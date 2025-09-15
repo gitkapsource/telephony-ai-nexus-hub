@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { Phone, Mail, Download, Calendar, CheckCircle, ArrowRight, Clock, Users, Award } from 'lucide-react';
+import { supabase } from '@/integrations/supabase/client';
+import { toast } from '@/hooks/use-toast';
 
 const LeadCaptureSection = () => {
   const [email, setEmail] = useState('');
@@ -13,18 +15,46 @@ const LeadCaptureSection = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitting(false);
+
+    try {
+      const payload = {
+        name,
+        email,
+        company: company || null,
+        service: selectedService || null,
+        message: `Lead from website. Phone: ${phone || 'N/A'}`,
+      };
+      console.log('[LeadCapture] Inserting into contacts', payload);
+      const { data, error } = await supabase.from('contacts').insert(payload).select();
+
+      if (error) {
+        console.error('[LeadCapture] Supabase insert error:', error);
+        throw error;
+      }
+
+      console.log('[LeadCapture] Inserted row(s):', data);
+
+      toast({
+        title: 'Submitted successfully',
+        description: "We'll contact you within 24 hours.",
+      });
+
       setSubmitted(true);
-      // Reset form
       setEmail('');
       setPhone('');
       setName('');
       setCompany('');
       setSelectedService('');
-    }, 1000);
+    } catch (err: unknown) {
+      const message = err instanceof Error ? err.message : 'Unknown error';
+      console.error('[LeadCapture] Submission failed:', err);
+      toast({
+        title: 'Submission failed',
+        description: message,
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const offers = [

@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { Phone, Mail, MapPin, Clock, MessageSquare, ChevronDown, ChevronUp } from 'lucide-react';
+import { supabase } from '@/integrations/supabase/client';
+import { toast } from '@/hooks/use-toast';
 
 const ContactSection = () => {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
@@ -43,6 +45,46 @@ const ContactSection = () => {
     setOpenFaq(openFaq === index ? null : index);
   };
 
+  const [form, setForm] = useState({
+    name: '',
+    company: '',
+    email: '',
+    phone: '',
+    service: '',
+    message: '',
+  });
+
+  const [submitting, setSubmitting] = useState(false);
+
+  const onSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setSubmitting(true);
+    try {
+      const payload = {
+        name: form.name,
+        email: form.email,
+        company: form.company || null,
+        service: form.service || null,
+        message: form.message || `Contact form submission. Phone: ${form.phone || 'N/A'}`,
+      };
+      console.log('[ContactSection] Inserting into contacts', payload);
+      const { data, error } = await supabase.from('contacts').insert(payload).select();
+      if (error) {
+        console.error('[ContactSection] Supabase insert error:', error);
+        throw error;
+      }
+      console.log('[ContactSection] Inserted row(s):', data);
+      toast({ title: 'Thanks! We received your message.' });
+      setForm({ name: '', company: '', email: '', phone: '', service: '', message: '' });
+    } catch (err: unknown) {
+      const message = err instanceof Error ? err.message : 'Unknown error';
+      console.error('[ContactSection] Submission failed:', err);
+      toast({ title: 'Failed to submit', description: message });
+    } finally {
+      setSubmitting(false);
+    }
+  };
+
   return (
     <section id="contact" className="py-12 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -63,20 +105,25 @@ const ContactSection = () => {
             <h2 className="text-2xl font-bold text-gray-900 mb-6">
               Get Free VoIP & Voice AI Consultation
             </h2>
-            <form className="space-y-6">
+            <form className="space-y-6" onSubmit={onSubmit}>
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">Name</label>
                   <input 
-                    type="text" 
+                    type="text"
+                    value={form.name}
+                    onChange={(e) => setForm({ ...form, name: e.target.value })}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                     placeholder="Your Name"
+                    required
                   />
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">Company</label>
                   <input 
-                    type="text" 
+                    type="text"
+                    value={form.company}
+                    onChange={(e) => setForm({ ...form, company: e.target.value })}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                     placeholder="Company Name"
                   />
@@ -87,15 +134,20 @@ const ContactSection = () => {
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">Email</label>
                   <input 
-                    type="email" 
+                    type="email"
+                    value={form.email}
+                    onChange={(e) => setForm({ ...form, email: e.target.value })}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                     placeholder="your@email.com"
+                    required
                   />
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">Phone</label>
                   <input 
-                    type="tel" 
+                    type="tel"
+                    value={form.phone}
+                    onChange={(e) => setForm({ ...form, phone: e.target.value })}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                     placeholder="+91-XXXXXXXXXX"
                   />
@@ -104,16 +156,20 @@ const ContactSection = () => {
 
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">Service Required</label>
-                <select className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
-                  <option>Select Service</option>
-                  <option>VoIP & IP Telephony Solutions</option>
-                  <option>Voice AI & Chat Bot Services</option>
-                  <option>FreeSWITCH & Asterisk Support</option>
-                  <option>Amazon Connect & 3CX Implementation</option>
-                  <option>Google Dialogflow & N8N Automation</option>
-                  <option>VoIP Migration Services</option>
-                  <option>24/7 VoIP Support</option>
-                  <option>Other</option>
+                <select 
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  value={form.service}
+                  onChange={(e) => setForm({ ...form, service: e.target.value })}
+                >
+                  <option value="">Select Service</option>
+                  <option value="voip-telephony">VoIP & IP Telephony Solutions</option>
+                  <option value="voice-ai">Voice AI & Chat Bot Services</option>
+                  <option value="fs-asterisk">FreeSWITCH & Asterisk Support</option>
+                  <option value="amazon-3cx">Amazon Connect & 3CX Implementation</option>
+                  <option value="dialogflow-n8n">Google Dialogflow & N8N Automation</option>
+                  <option value="voip-migration">VoIP Migration Services</option>
+                  <option value="support-24x7">24/7 VoIP Support</option>
+                  <option value="other">Other</option>
                 </select>
               </div>
 
@@ -121,6 +177,8 @@ const ContactSection = () => {
                 <label className="block text-sm font-medium text-gray-700 mb-2">Message</label>
                 <textarea 
                   rows={4}
+                  value={form.message}
+                  onChange={(e) => setForm({ ...form, message: e.target.value })}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                   placeholder="Tell us about your VoIP or Voice AI requirements..."
                 ></textarea>
@@ -128,9 +186,10 @@ const ContactSection = () => {
 
               <button 
                 type="submit"
-                className="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white py-4 rounded-lg font-semibold hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 shadow-lg"
+                disabled={submitting}
+                className="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white py-4 rounded-lg font-semibold hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 shadow-lg disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                Get Free VoIP Consultation
+                {submitting ? 'Submitting...' : 'Get Free VoIP Consultation'}
               </button>
             </form>
           </div>
