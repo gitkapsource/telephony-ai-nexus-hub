@@ -57,54 +57,6 @@ const LeadCaptureSection = () => {
     }
   };
 
-  const offers = [
-    {
-      icon: Download,
-      title: "VoIP Migration Guide",
-      description: "Complete 25-page guide to VoIP migration for Indian businesses",
-      cta: "Download Free Guide",
-      color: "from-blue-600 to-purple-600",
-      value: "₹5,000 value"
-    },
-    {
-      icon: Calendar,
-      title: "VoIP Consultation",
-      description: "30-minute consultation with VoIP experts",
-      cta: "Book Consultation",
-      color: "from-green-600 to-blue-600",
-      value: "₹2,000 value"
-    },
-    {
-      icon: Phone,
-      title: "VoIP Assessment",
-      description: "Get a cost analysis for your business",
-      cta: "Get Assessment",
-      color: "from-purple-600 to-pink-600",
-      value: "₹3,000 value"
-    }
-  ];
-
-  const testimonials = [
-    {
-      name: "Rajesh Kumar",
-      company: "Tech Solutions India",
-      text: "IntelVoiz helped us save 60% on our phone bills with VoIP migration.",
-      rating: 5
-    },
-    {
-      name: "Priya Sharma",
-      company: "E-commerce Startup",
-      text: "Their Voice AI implementation increased our sales by 40%.",
-      rating: 5
-    },
-    {
-      name: "Amit Patel",
-      company: "Call Center Manager",
-      text: "Best VoIP consulting service in India. Highly recommended!",
-      rating: 5
-    }
-  ];
-
   if (submitted) {
     return (
       <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
@@ -252,81 +204,8 @@ const LeadCaptureSection = () => {
             </div>
           </div>
 
-          {/* Offers and Testimonials */}
-          <div className="space-y-8">
-            {/* Free Offers */}
-            <div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">
-                Free Resources for Indian Businesses
-              </h3>
-              <div className="space-y-4">
-                {offers.map((offer, index) => (
-                  <div key={index} className="bg-white rounded-lg p-6 shadow-md border-l-4 border-blue-500">
-                    <div className="flex items-start space-x-4">
-                      <div className={`flex items-center justify-center w-12 h-12 bg-gradient-to-r ${offer.color} rounded-lg`}>
-                        <offer.icon className="h-6 w-6 text-white" />
-                      </div>
-                      <div className="flex-1">
-                        <h4 className="font-semibold text-gray-900 mb-1">{offer.title}</h4>
-                        <p className="text-gray-600 text-sm mb-2">{offer.description}</p>
-                        <div className="flex items-center justify-between">
-                          <span className="text-green-600 text-sm font-medium">{offer.value}</span>
-                          <button className="text-blue-600 hover:text-blue-700 font-semibold text-sm flex items-center space-x-1">
-                            <span>Get Now</span>
-                            <ArrowRight className="h-4 w-4" />
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Testimonials */}
-            <div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">
-                What Our Clients Say
-              </h3>
-              <div className="space-y-4">
-                {testimonials.map((testimonial, index) => (
-                  <div key={index} className="bg-white rounded-lg p-6 shadow-md">
-                    <div className="flex items-center space-x-1 mb-3">
-                      {[...Array(testimonial.rating)].map((_, i) => (
-                        <span key={i} className="text-yellow-400">★</span>
-                      ))}
-                    </div>
-                    <p className="text-gray-700 mb-3">"{testimonial.text}"</p>
-                    <div className="flex items-center space-x-3">
-                      <div className="w-10 h-10 bg-gradient-to-br from-blue-100 to-purple-100 rounded-full flex items-center justify-center">
-                        <span className="text-blue-600 font-semibold text-sm">
-                          {testimonial.name.split(' ').map(n => n[0]).join('')}
-                        </span>
-                      </div>
-                      <div>
-                        <div className="font-semibold text-gray-900">{testimonial.name}</div>
-                        <div className="text-sm text-gray-600">{testimonial.company}</div>
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Urgency CTA */}
-            <div className="bg-gradient-to-r from-red-600 to-orange-600 rounded-lg p-6 text-white">
-              <div className="flex items-center space-x-3 mb-3">
-                <Clock className="h-6 w-6" />
-                <h4 className="text-lg font-semibold">Limited Time Offer</h4>
-              </div>
-              <p className="mb-4">
-                Get 50% off on VoIP migration services for the first 10 businesses this month!
-              </p>
-              <button className="bg-white text-red-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
-                Claim Your Discount
-              </button>
-            </div>
-          </div>
+          {/* Right column intentionally left empty per latest requirements */}
+          <div></div>
         </div>
       </div>
     </section>
