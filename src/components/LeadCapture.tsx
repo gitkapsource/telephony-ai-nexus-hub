@@ -30,23 +30,23 @@ const LeadCapture = () => {
   const offers = [
     {
       icon: Download,
-      title: "Free VoIP Migration Guide",
+      title: "VoIP Migration Guide",
       description: "Complete 25-page guide to VoIP migration for Indian businesses",
       cta: "Download Free Guide",
       color: "from-blue-600 to-purple-600"
     },
     {
       icon: Calendar,
-      title: "Free VoIP Consultation",
+      title: "VoIP Consultation",
       description: "30-minute consultation with VoIP experts",
-      cta: "Book Free Consultation",
+      cta: "Book Consultation",
       color: "from-green-600 to-blue-600"
     },
     {
       icon: Phone,
-      title: "Free VoIP Assessment",
-      description: "Get a free cost analysis for your business",
-      cta: "Get Free Assessment",
+      title: "VoIP Assessment",
+      description: "Get a cost analysis for your business",
+      cta: "Get Assessment",
       color: "from-purple-600 to-pink-600"
     }
   ];
@@ -58,7 +58,7 @@ const LeadCapture = () => {
           <CheckCircle className="h-16 w-16 text-green-500 mx-auto mb-4" />
           <h3 className="text-2xl font-bold text-gray-900 mb-2">Thank You!</h3>
           <p className="text-gray-600 mb-6">
-            We'll contact you within 24 hours with your free consultation.
+            We'll contact you within 24 hours with your consultation.
           </p>
           <button
             onClick={() => setSubmitted(false)}
@@ -79,7 +79,7 @@ const LeadCapture = () => {
         className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-3 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all duration-300 flex items-center space-x-2"
       >
         <Phone className="h-5 w-5" />
-        <span>Get Free VoIP Consultation</span>
+        <span>Book VoIP Consultation</span>
       </button>
     </div>
   );

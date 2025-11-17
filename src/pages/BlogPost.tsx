@@ -868,7 +868,7 @@ const BlogPost = () => {
                   to="/#contact"
                   className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-3 rounded-lg font-semibold hover:from-blue-700 hover:to-purple-700 transition-all duration-300 text-center"
                 >
-                  Get Free Consultation
+                  Book Consultation
                 </Link>
                 <a 
                   href="tel:+91-9825597662"

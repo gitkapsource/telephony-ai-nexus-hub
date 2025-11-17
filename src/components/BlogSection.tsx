@@ -285,7 +285,7 @@ const BlogSection = () => {
               </button>
             </div>
             <p className="text-blue-200 text-sm mt-4">
-              Join 500+ Indian businesses already subscribed to our VoIP insights
+              Join 25+ Indian businesses already subscribed to our VoIP insights
             </p>
           </div>
         </div>

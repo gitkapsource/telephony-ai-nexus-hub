@@ -130,7 +130,7 @@ const Footer = () => {
             <div className="flex flex-col items-center">
               <Zap className="h-8 w-8 text-blue-400 mb-2" />
               <h4 className="font-semibold text-sm">10+ Years Experience</h4>
-              <p className="text-gray-400 text-xs">500+ VoIP Projects Completed</p>
+              <p className="text-gray-400 text-xs">25+ VoIP Projects Completed</p>
             </div>
             <div className="flex flex-col items-center">
               <Globe className="h-8 w-8 text-purple-400 mb-2" />

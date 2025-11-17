@@ -240,7 +240,7 @@ const Blog = () => {
           </h3>
           <p className="text-blue-100 mb-6 max-w-2xl mx-auto">
             Get the latest articles, implementation guides, and industry insights delivered to your inbox. 
-            Join 500+ Indian businesses already subscribed.
+            Join 25+ Indian businesses already subscribed.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
             <input

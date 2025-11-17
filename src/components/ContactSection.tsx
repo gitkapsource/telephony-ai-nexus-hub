@@ -17,7 +17,7 @@ const ContactSection = () => {
     },
     {
       question: "Do you provide VoIP consulting in India?",
-      answer: "Yes, IntelVoiz is India's leading VoIP consulting firm, providing expert IP Telephony solutions, Voice AI services, and technical support across India with over 10 years of experience and 500+ successful projects."
+      answer: "Yes, IntelVoiz is India's leading VoIP consulting firm, providing expert IP Telephony solutions, Voice AI services, and technical support across India with over 10 years of experience and 25+ successful projects."
     },
     {
       question: "What VoIP platforms do you support?",
@@ -25,7 +25,7 @@ const ContactSection = () => {
     },
     {
       question: "How much does VoIP implementation cost?",
-      answer: "VoIP implementation costs vary based on your requirements. We offer free consultation to assess your needs and provide customized pricing. Contact us for a detailed quote tailored to your business."
+      answer: "VoIP implementation costs vary based on your requirements. We offer consultation to assess your needs and provide customized pricing. Contact us for a detailed quote tailored to your business."
     },
     {
       question: "Do you provide 24/7 VoIP support?",
@@ -95,7 +95,7 @@ const ContactSection = () => {
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Get expert VoIP and Voice AI consultation from India's leading telecommunications experts. 
-            Free consultation available for all VoIP and Voice AI projects.
+            Consultation available for all VoIP and Voice AI projects.
           </p>
         </div>
 
@@ -103,7 +103,7 @@ const ContactSection = () => {
           {/* Contact Form */}
           <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl p-8">
             <h2 className="text-2xl font-bold text-gray-900 mb-6">
-              Get Free VoIP & Voice AI Consultation
+              Book VoIP & Voice AI Consultation
             </h2>
             <form className="space-y-6" onSubmit={onSubmit}>
               <div className="grid md:grid-cols-2 gap-4">
@@ -169,6 +169,8 @@ const ContactSection = () => {
                   <option value="dialogflow-n8n">Google Dialogflow & N8N Automation</option>
                   <option value="voip-migration">VoIP Migration Services</option>
                   <option value="support-24x7">24/7 VoIP Support</option>
+                  <option value="ms-teams">MS Teams Complete Setup</option>
+                  <option value="us-uk-canada-did">US/UK/Canada DID</option>
                   <option value="other">Other</option>
                 </select>
               </div>
@@ -189,7 +191,7 @@ const ContactSection = () => {
                 disabled={submitting}
                 className="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white py-4 rounded-lg font-semibold hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 shadow-lg disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                {submitting ? 'Submitting...' : 'Get Free VoIP Consultation'}
+                {submitting ? 'Submitting...' : 'Book VoIP Consultation'}
               </button>
             </form>
           </div>

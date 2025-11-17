@@ -3,7 +3,7 @@ import { Award, Users, Clock, Shield, Globe, Zap } from 'lucide-react';
 
 const AboutSection = () => {
   const stats = [
-    { icon: Users, number: "500+", label: "VoIP Projects Completed" },
+    { icon: Users, number: "25+", label: "VoIP Projects Completed" },
     { icon: Clock, number: "10+", label: "Years Experience" },
     { icon: Shield, number: "24/7", label: "Technical Support" },
     { icon: Globe, number: "50+", label: "Cities Served in India" }
@@ -129,7 +129,7 @@ const AboutSection = () => {
               </div>
               <div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">10+ Years Experience</h3>
-                <p className="text-gray-600 text-sm">Over a decade of experience in VoIP, IP Telephony, and Voice AI solutions with 500+ successful projects.</p>
+                <p className="text-gray-600 text-sm">Over a decade of experience in VoIP, IP Telephony, and Voice AI solutions with 25+ successful projects.</p>
               </div>
             </div>
 
@@ -162,7 +162,7 @@ const AboutSection = () => {
             }}
             className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-lg font-semibold hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 shadow-lg"
           >
-            Get Free VoIP Consultation
+            Book VoIP Consultation
           </button>
         </div>
       </div>

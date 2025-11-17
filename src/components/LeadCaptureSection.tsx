@@ -60,7 +60,7 @@ const LeadCaptureSection = () => {
   const offers = [
     {
       icon: Download,
-      title: "Free VoIP Migration Guide",
+      title: "VoIP Migration Guide",
       description: "Complete 25-page guide to VoIP migration for Indian businesses",
       cta: "Download Free Guide",
       color: "from-blue-600 to-purple-600",
@@ -68,17 +68,17 @@ const LeadCaptureSection = () => {
     },
     {
       icon: Calendar,
-      title: "Free VoIP Consultation",
+      title: "VoIP Consultation",
       description: "30-minute consultation with VoIP experts",
-      cta: "Book Free Consultation",
+      cta: "Book Consultation",
       color: "from-green-600 to-blue-600",
       value: "₹2,000 value"
     },
     {
       icon: Phone,
-      title: "Free VoIP Assessment",
-      description: "Get a free cost analysis for your business",
-      cta: "Get Free Assessment",
+      title: "VoIP Assessment",
+      description: "Get a cost analysis for your business",
+      cta: "Get Assessment",
       color: "from-purple-600 to-pink-600",
       value: "₹3,000 value"
     }
@@ -112,7 +112,7 @@ const LeadCaptureSection = () => {
           <CheckCircle className="h-16 w-16 text-green-500 mx-auto mb-4" />
           <h3 className="text-2xl font-bold text-gray-900 mb-2">Thank You!</h3>
           <p className="text-gray-600 mb-6">
-            We'll contact you within 24 hours with your free consultation.
+            We'll contact you within 24 hours with your consultation.
           </p>
           <button
             onClick={() => setSubmitted(false)}
@@ -130,10 +130,10 @@ const LeadCaptureSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            Get Free VoIP & Voice AI Consultation
+            Book VoIP & Voice AI Consultation
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Join 500+ Indian businesses that have transformed their communication with our expert VoIP and Voice AI solutions.
+            Join 25+ Indian businesses that have transformed their communication with our expert VoIP and Voice AI solutions.
           </p>
         </div>
 
@@ -141,7 +141,7 @@ const LeadCaptureSection = () => {
           {/* Lead Capture Form */}
           <div className="bg-white rounded-2xl shadow-xl p-8">
             <h3 className="text-2xl font-bold text-gray-900 mb-6">
-              Get Your Free Consultation
+              Book Your Consultation
             </h3>
             
             <form onSubmit={handleSubmit} className="space-y-6">
@@ -208,6 +208,8 @@ const LeadCaptureSection = () => {
                   <option value="asterisk">Asterisk Implementation</option>
                   <option value="amazon-connect">Amazon Connect</option>
                   <option value="sip-trunking">SIP Trunking</option>
+                  <option value="ms-teams">MS Teams Complete Setup</option>
+                  <option value="us-uk-canada-did">US/UK/Canada DID</option>
                   <option value="other">Other</option>
                 </select>
               </div>
@@ -224,7 +226,7 @@ const LeadCaptureSection = () => {
                   </>
                 ) : (
                   <>
-                    <span>Get Free VoIP Consultation</span>
+                    <span>Book VoIP Consultation</span>
                     <ArrowRight className="h-5 w-5" />
                   </>
                 )}
@@ -235,7 +237,7 @@ const LeadCaptureSection = () => {
             <div className="mt-8 pt-8 border-t border-gray-200">
               <div className="grid grid-cols-3 gap-4 text-center">
                 <div>
-                  <div className="text-2xl font-bold text-blue-600">500+</div>
+                  <div className="text-2xl font-bold text-blue-600">25+</div>
                   <div className="text-sm text-gray-600">Happy Clients</div>
                 </div>
                 <div>
