@@ -1,5 +1,5 @@
 import React from 'react';
-import { Phone, Bot, Zap, Cloud, Settings, MessageSquare, Shield, Users, Globe } from 'lucide-react';
+import { Phone, Bot, Zap, Cloud, Settings, MessageSquare, Shield, Users, Globe, PhoneCall, Globe2 } from 'lucide-react';
 
 const ServicesSection = () => {
   const mainServices = [
@@ -35,6 +35,28 @@ const ServicesSection = () => {
       services: ["N8N with VAPI Integration", "N8N with Twilio Voice", "Google Dialogflow CX", "Custom Voice Bot Development", "AI Voice Automation", "Conversational AI Solutions"]
     },
     {
+      icon: PhoneCall,
+      title: "US / UK / Canada SIP Trunking",
+      services: [
+        "Geo-localized US/UK/CA CLIs",
+        "High-quality Tier-1 & Tier-2 routes",
+        "Dynamic failover with real-time optimization",
+        "Low-cost outbound & inbound calling",
+        "Quick provisioning with zero setup fees"
+      ]
+    },
+    {
+      icon: Globe2,
+      title: "US / UK / Canada DID Numbers",
+      services: [
+        "Local & toll-free numbers across US/UK/CA",
+        "Instant activation & number portability",
+        "Spam-shielded, reputation-managed CLIs",
+        "Works with PBX, dialers & AI voice agents",
+        "Volume discounts for scaling teams"
+      ]
+    },
+    {
       icon: Phone,
       title: "VoIP Consulting & Technical Support",
       services: [
@@ -64,33 +86,6 @@ const ServicesSection = () => {
   ];
 
   const additionalServices = [
-  const internationalServices = [
-    {
-      title: "US / UK / Canada SIP Trunking",
-      description:
-        "Carrier-grade SIP trunks engineered for crystal-clear international calling. Ideal for BPOs, call centers, SaaS platforms, and outbound teams that demand high delivery rates and 24/7 uptime.",
-      benefits: [
-        "Geo-localized US/UK/CA CLIs",
-        "High-quality Tier-1/Tier-2 routes",
-        "Dynamic failover & real-time routing optimization",
-        "Low-cost outbound/inbound calling",
-        "Quick provisioning with zero setup fees",
-      ],
-    },
-    {
-      title: "US / UK / Canada DID Numbers",
-      description:
-        "Establish local presence with trusted business numbers that boost answer rates and customer confidence. Perfect for sales pods, remote offices, customer support, and global expansion.",
-      benefits: [
-        "Local & toll-free numbers across US/UK/CA",
-        "Instant activation & number portability",
-        "Spam-shielded, reputation-managed CLIs",
-        "Plug-and-play with PBX, dialers & AI voice agents",
-        "Attractive volume discounts",
-      ],
-    },
-  ];
-
     {
       icon: Shield,
       title: "VoIP Security & Compliance",
@@ -227,44 +222,6 @@ const ServicesSection = () => {
                     </li>
                   ))}
                 </ul>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* International Services */}
-        <div className="mt-20">
-          <div className="text-center mb-12">
-            <h3 className="text-3xl font-bold text-gray-900 mb-4">
-              North America & UK Voice Infrastructure
-            </h3>
-            <p className="text-lg text-gray-600">
-              Premium SIP trunking and DID coverage for the US, UK, and Canada with geo-localized caller IDs,
-              reliable routing, and instant provisioning.
-            </p>
-          </div>
-          <div className="grid md:grid-cols-2 gap-8">
-            {internationalServices.map((service) => (
-              <div key={service.title} className="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm hover:shadow-lg transition-shadow duration-300">
-                <h4 className="text-2xl font-semibold text-gray-900 mb-4">
-                  {service.title}
-                </h4>
-                <p className="text-gray-600 leading-relaxed mb-6">
-                  {service.description}
-                </p>
-                <div>
-                  <p className="text-sm uppercase tracking-wide text-blue-600 font-semibold mb-3">
-                    What you get
-                  </p>
-                  <ul className="space-y-2 text-gray-700">
-                    {service.benefits.map((benefit) => (
-                      <li key={benefit} className="flex items-start">
-                        <span className="w-2 h-2 rounded-full bg-blue-600 mt-2 mr-3"></span>
-                        <span>{benefit}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
               </div>
             ))}
           </div>
