@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Calendar, Clock, ArrowLeft, Share2, Tag } from 'lucide-react';
 
 const BlogPost = () => {
   const { id } = useParams<{ id: string }>();
+  const [shareMessage, setShareMessage] = useState<string | null>(null);
   
   const blogPosts = [
     {
@@ -767,6 +768,31 @@ const BlogPost = () => {
     );
   }
 
+  const handleShare = async () => {
+    if (!post) return;
+
+    const shareUrl = window.location.href;
+    const shareData = {
+      title: post.title,
+      text: `${post.title} — IntelVoiz Communications`,
+      url: shareUrl,
+    };
+
+    try {
+      if (navigator.share) {
+        await navigator.share(shareData);
+        setShareMessage('Article shared successfully.');
+      } else if (navigator.clipboard && window.isSecureContext) {
+        await navigator.clipboard.writeText(shareUrl);
+        setShareMessage('Link copied to clipboard.');
+      } else {
+        setShareMessage(`Copy this link: ${shareUrl}`);
+      }
+    } catch (error) {
+      setShareMessage('Unable to share right now. Please copy the link manually.');
+    }
+  };
+
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Header */}
@@ -832,10 +858,21 @@ const BlogPost = () => {
                   <p className="text-gray-500 text-sm">IntelVoiz Team</p>
                 </div>
               </div>
-              <button className="flex items-center space-x-2 text-gray-500 hover:text-gray-700">
-                <Share2 className="h-4 w-4" />
-                <span className="text-sm">Share</span>
-              </button>
+              <div className="flex flex-col items-end">
+                <button
+                  type="button"
+                  onClick={handleShare}
+                  className="flex items-center space-x-2 text-gray-500 hover:text-gray-700"
+                >
+                  <Share2 className="h-4 w-4" />
+                  <span className="text-sm">Share</span>
+                </button>
+                {shareMessage && (
+                  <span className="text-xs text-green-600 mt-1" aria-live="polite">
+                    {shareMessage}
+                  </span>
+                )}
+              </div>
             </div>
 
             {/* Tags */}

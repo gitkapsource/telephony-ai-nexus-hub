@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom';
 const Blog = () => {
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
   const [searchQuery, setSearchQuery] = useState('');
+  const [newsletterEmail, setNewsletterEmail] = useState('');
+  const [newsletterError, setNewsletterError] = useState<string | null>(null);
 
   const blogPosts = [
     {
@@ -87,6 +89,20 @@ const Blog = () => {
     
     return matchesCategory && matchesSearch;
   });
+
+  const handleNewsletterSubscribe = () => {
+    if (!newsletterEmail.trim()) {
+      setNewsletterError('Please enter your email address');
+      return;
+    }
+
+    const email = newsletterEmail.trim();
+    const subject = encodeURIComponent('Newsletter Subscription Request');
+    const body = encodeURIComponent(`Please add ${email} to the IntelVoiz Communications newsletter.`);
+    window.location.href = `mailto:info@intelvoiz.com?subject=${subject}&body=${body}`;
+    setNewsletterEmail('');
+    setNewsletterError(null);
+  };
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -246,12 +262,23 @@ const Blog = () => {
             <input
               type="email"
               placeholder="Enter your email"
+              value={newsletterEmail}
+              onChange={(e) => setNewsletterEmail(e.target.value)}
               className="flex-1 px-4 py-3 rounded-lg text-gray-900 focus:ring-2 focus:ring-white focus:outline-none"
             />
-            <button className="bg-white text-blue-600 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition-colors">
+            <button
+              type="button"
+              onClick={handleNewsletterSubscribe}
+              className="bg-white text-blue-600 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition-colors"
+            >
               Subscribe
             </button>
           </div>
+          {newsletterError && (
+            <p className="text-red-200 text-sm mt-3">
+              {newsletterError}
+            </p>
+          )}
         </div>
       </div>
     </div>

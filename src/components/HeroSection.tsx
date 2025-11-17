@@ -9,6 +9,13 @@ const HeroSection = () => {
     }
   };
 
+  const scrollToServices = () => {
+    const element = document.getElementById('services');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section id="home" className="pt-16 min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
@@ -19,7 +26,7 @@ const HeroSection = () => {
                 IntelVoiz Communications
               </span>
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-                India's #1 VoIP & Voice AI
+                VoIP and Voice AI
                 <span className="block bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
                   Solutions Provider
                 </span>
@@ -61,7 +68,10 @@ const HeroSection = () => {
                 <span>Book VoIP Consultation</span>
                 <ArrowRight className="h-5 w-5" />
               </button>
-              <button className="border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-lg font-semibold hover:border-blue-600 hover:text-blue-600 transition-all duration-300">
+              <button
+                onClick={scrollToServices}
+                className="border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-lg font-semibold hover:border-blue-600 hover:text-blue-600 transition-all duration-300"
+              >
                 View Voice AI Services
               </button>
             </div>
