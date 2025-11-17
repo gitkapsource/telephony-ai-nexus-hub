@@ -25,6 +25,9 @@ const HeroSection = () => {
                 Expert VoIP consulting, IP Telephony solutions, and Voice AI automation services. 
                 We help businesses modernize communication infrastructure with FreeSWITCH, Asterisk, 
                 Amazon Connect, 3CX, Twilio, and cutting-edge Voice Bot technology.
+                <span className="block text-2xl font-semibold text-gray-900 mt-4">
+                  Intelligent Voice for a Connected World.
+                </span>
               </p>
             </div>
 
