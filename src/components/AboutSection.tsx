@@ -5,8 +5,7 @@ const AboutSection = () => {
   const stats = [
     { icon: Users, number: "25+", label: "VoIP Projects Completed" },
     { icon: Clock, number: "10+", label: "Years Experience" },
-    { icon: Shield, number: "24/7", label: "Technical Support" },
-    { icon: Globe, number: "50+", label: "Cities Served in India" }
+    { icon: Shield, number: "24/7", label: "Technical Support" }
   ];
 
   const expertise = [
@@ -119,7 +118,7 @@ const AboutSection = () => {
               </div>
               <div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">Pan-India Service</h3>
-                <p className="text-gray-600 text-sm">Serving clients across 50+ cities in India with local expertise and understanding of regional requirements.</p>
+                <p className="text-gray-600 text-sm">Serving clients across India with local expertise and understanding of regional requirements.</p>
               </div>
             </div>
 

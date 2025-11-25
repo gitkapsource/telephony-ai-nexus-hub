@@ -209,7 +209,7 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900">Phone</h3>
-                    <p className="text-gray-600">+91-9825597662</p>
+                    <p className="text-gray-600">+91-7935901473</p>
                   </div>
                 </div>
 
@@ -229,7 +229,7 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900">Service Area</h3>
-                    <p className="text-gray-600">Pan-India (50+ Cities)</p>
+                    <p className="text-gray-600">Pan-India Coverage</p>
                   </div>
                 </div>
 

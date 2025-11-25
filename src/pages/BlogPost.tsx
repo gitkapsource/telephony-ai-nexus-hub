@@ -1,10 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Calendar, Clock, ArrowLeft, Share2, Tag } from 'lucide-react';
 
 const BlogPost = () => {
   const { id } = useParams<{ id: string }>();
-  const [shareMessage, setShareMessage] = useState<string | null>(null);
   
   const blogPosts = [
     {
@@ -93,7 +92,7 @@ const BlogPost = () => {
         <h2>Conclusion</h2>
         <p>VoIP migration is a strategic investment that can significantly improve your business communication while reducing costs. With proper planning and implementation, Indian businesses can successfully transition to modern VoIP systems and enjoy the benefits of advanced telephony features.</p>
         
-        <p>For expert VoIP migration services in India, contact IntelVoiz at +91-9825597662 or email info@intelvoiz.com.</p>
+        <p>For expert VoIP migration services in India, contact IntelVoiz at +91-7935901473 or email info@intelvoiz.com.</p>
       `,
       category: "VoIP Solutions",
       date: "2024-01-15",
@@ -265,7 +264,7 @@ const BlogPost = () => {
         <h2>Conclusion</h2>
         <p>Both FreeSWITCH and Asterisk are excellent VoIP platforms, but they serve different needs. For most Indian SMBs, Asterisk offers the best balance of features, ease of use, and local support. For larger enterprises with high call volumes, FreeSWITCH provides superior performance and scalability.</p>
         
-        <p>Contact IntelVoiz at +91-9825597662 for expert consultation on choosing the right VoIP platform for your business.</p>
+        <p>Contact IntelVoiz at +91-7935901473 for expert consultation on choosing the right VoIP platform for your business.</p>
       `,
       category: "VoIP Platforms",
       date: "2024-01-12",
@@ -379,7 +378,7 @@ const BlogPost = () => {
         <h2>Conclusion</h2>
         <p>Amazon Connect provides Indian businesses with a powerful, scalable contact center solution. With proper implementation and optimization, it can significantly improve customer service while reducing costs.</p>
         
-        <p>For expert Amazon Connect implementation in India, contact IntelVoiz at +91-9825597662.</p>
+        <p>For expert Amazon Connect implementation in India, contact IntelVoiz at +91-7935901473.</p>
       `
     },
     {
@@ -478,7 +477,7 @@ const BlogPost = () => {
         <h2>Conclusion</h2>
         <p>Voice AI is not just a trend—it's a fundamental shift in how businesses interact with customers. Indian businesses that adopt Voice AI early will gain significant competitive advantages.</p>
         
-        <p>Contact IntelVoiz at +91-9825597662 for expert Voice AI implementation services.</p>
+        <p>Contact IntelVoiz at +91-7935901473 for expert Voice AI implementation services.</p>
       `
     },
     {
@@ -608,7 +607,7 @@ const BlogPost = () => {
         <h2>Conclusion</h2>
         <p>Google Dialogflow provides Indian businesses with a powerful platform for building intelligent conversational agents. With proper implementation and optimization, it can significantly improve customer engagement and operational efficiency.</p>
         
-        <p>For expert Dialogflow implementation in India, contact IntelVoiz at +91-9825597662.</p>
+        <p>For expert Dialogflow implementation in India, contact IntelVoiz at +91-7935901473.</p>
       `
     },
     {
@@ -742,7 +741,7 @@ const BlogPost = () => {
         <h2>Conclusion</h2>
         <p>SIP trunking offers Indian businesses significant cost savings and operational benefits. With proper implementation and management, it can transform your business communication infrastructure.</p>
         
-        <p>For expert SIP trunking services in India, contact IntelVoiz at +91-9825597662.</p>
+        <p>For expert SIP trunking services in India, contact IntelVoiz at +91-7935901473.</p>
       `
     }
   ];
@@ -767,31 +766,6 @@ const BlogPost = () => {
       </div>
     );
   }
-
-  const handleShare = async () => {
-    if (!post) return;
-
-    const shareUrl = window.location.href;
-    const shareData = {
-      title: post.title,
-      text: `${post.title} — IntelVoiz Communications`,
-      url: shareUrl,
-    };
-
-    try {
-      if (navigator.share) {
-        await navigator.share(shareData);
-        setShareMessage('Article shared successfully.');
-      } else if (navigator.clipboard && window.isSecureContext) {
-        await navigator.clipboard.writeText(shareUrl);
-        setShareMessage('Link copied to clipboard.');
-      } else {
-        setShareMessage(`Copy this link: ${shareUrl}`);
-      }
-    } catch (error) {
-      setShareMessage('Unable to share right now. Please copy the link manually.');
-    }
-  };
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -858,21 +832,10 @@ const BlogPost = () => {
                   <p className="text-gray-500 text-sm">IntelVoiz Team</p>
                 </div>
               </div>
-              <div className="flex flex-col items-end">
-                <button
-                  type="button"
-                  onClick={handleShare}
-                  className="flex items-center space-x-2 text-gray-500 hover:text-gray-700"
-                >
-                  <Share2 className="h-4 w-4" />
-                  <span className="text-sm">Share</span>
-                </button>
-                {shareMessage && (
-                  <span className="text-xs text-green-600 mt-1" aria-live="polite">
-                    {shareMessage}
-                  </span>
-                )}
-              </div>
+              <button className="flex items-center space-x-2 text-gray-500 hover:text-gray-700">
+                <Share2 className="h-4 w-4" />
+                <span className="text-sm">Share</span>
+              </button>
             </div>
 
             {/* Tags */}
@@ -908,10 +871,10 @@ const BlogPost = () => {
                   Book Consultation
                 </Link>
                 <a 
-                  href="tel:+91-9825597662"
+                  href="tel:+91-7935901473"
                   className="border-2 border-gray-300 text-gray-700 px-6 py-3 rounded-lg font-semibold hover:border-blue-600 hover:text-blue-600 transition-all duration-300 text-center"
                 >
-                  Call +91-9825597662
+                  Call +91-7935901473
                 </a>
               </div>
             </div>

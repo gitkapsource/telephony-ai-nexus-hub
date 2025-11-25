@@ -82,7 +82,7 @@ const Navigation = () => {
           <div className="hidden md:flex items-center space-x-4">
             <div className="flex items-center text-gray-600 text-sm">
               <Phone className="h-4 w-4 mr-1" />
-              <span>+91-9825597662</span>
+              <span>+91-7935901473</span>
             </div>
             <div className="flex items-center text-gray-600 text-sm">
               <Mail className="h-4 w-4 mr-1" />

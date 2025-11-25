@@ -9,13 +9,6 @@ const HeroSection = () => {
     }
   };
 
-  const scrollToServices = () => {
-    const element = document.getElementById('services');
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   return (
     <section id="home" className="pt-16 min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
@@ -26,7 +19,7 @@ const HeroSection = () => {
                 IntelVoiz Communications
               </span>
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-                VoIP and Voice AI
+                India's #1 VoIP & Voice AI
                 <span className="block bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
                   Solutions Provider
                 </span>
@@ -68,10 +61,7 @@ const HeroSection = () => {
                 <span>Book VoIP Consultation</span>
                 <ArrowRight className="h-5 w-5" />
               </button>
-              <button
-                onClick={scrollToServices}
-                className="border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-lg font-semibold hover:border-blue-600 hover:text-blue-600 transition-all duration-300"
-              >
+              <button className="border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-lg font-semibold hover:border-blue-600 hover:text-blue-600 transition-all duration-300">
                 View Voice AI Services
               </button>
             </div>
@@ -81,7 +71,7 @@ const HeroSection = () => {
               <div className="flex items-center space-x-6 text-sm text-gray-600">
                 <div className="flex items-center space-x-2">
                   <Phone className="h-4 w-4 text-blue-600" />
-                  <span>+91-9825597662</span>
+                <span>+91-7935901473</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <Bot className="h-4 w-4 text-purple-600" />

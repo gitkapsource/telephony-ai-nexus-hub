@@ -78,7 +78,7 @@ Choose one of these methods:
 
 **Step 2: Complete Profile**
 - **Address**: Your business address in India
-- **Phone**: +91-9825597662
+- **Phone**: +91-7935901473
 - **Website**: https://intelvoiz.com
 - **Hours**: 9 AM - 6 PM (or your actual hours)
 - **Services**: Add all VoIP and Voice AI services

@@ -8,7 +8,7 @@
 - **Create/Claim GMB Profile**
   - Business Name: "IntelVoiz - VoIP & Voice AI Experts"
   - Category: "Telecommunications Service"
-  - Phone: +91-9825597662
+  - Phone: +91-7935901473
   - Website: https://intelvoiz.com
   - Address: Your business address in India
   - Hours: 9 AM - 6 PM (or actual hours)
