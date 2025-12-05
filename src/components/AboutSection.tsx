@@ -24,7 +24,7 @@ const AboutSection = () => {
   ];
 
   return (
-    <section id="about" className="py-12 bg-gradient-to-br from-gray-50 to-blue-50">
+    <section id="about" className="py-20 bg-gradient-to-b from-slate-50/50 via-white to-indigo-50/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center mb-16">
           <div className="space-y-8">

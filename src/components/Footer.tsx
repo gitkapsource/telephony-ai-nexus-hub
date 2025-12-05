@@ -3,7 +3,6 @@ import React from 'react';
 import { Phone, Mail, MapPin, Clock, Globe, Shield, Zap } from 'lucide-react';
 
 const Footer = () => {
-  const currentYear = new Date().getFullYear();
 
   const services = [
     "VoIP & IP Telephony Solutions",
@@ -188,7 +187,7 @@ const Footer = () => {
         {/* Copyright */}
         <div className="border-t border-gray-800 mt-8 pt-8 text-center">
           <p className="text-gray-400 text-sm">
-            © {currentYear} IntelVoiz - VoIP & Voice AI Experts. All rights reserved. 
+            © IntelVoiz - VoIP & Voice AI Experts. All rights reserved. 
             India's leading VoIP and Voice AI solutions provider.
           </p>
           <p className="text-gray-500 text-xs mt-2">

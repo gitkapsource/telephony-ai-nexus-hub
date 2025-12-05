@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Calendar, Clock, ArrowRight, Phone, Bot, Cloud, Shield, Search } from 'lucide-react';
+import { Clock, ArrowRight, Phone, Bot, Cloud, Shield, Search } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Blog = () => {
@@ -12,7 +12,6 @@ const Blog = () => {
       title: "Complete Guide to VoIP Migration in India: Step-by-Step Process",
       excerpt: "Learn the complete process of migrating from traditional phone systems to VoIP. Discover how Indian businesses can save up to 60% on communication costs with proper VoIP implementation.",
       category: "VoIP Solutions",
-      date: "2024-01-15",
       readTime: "8 min read",
       image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=400&h=250&fit=crop",
       tags: ["VoIP Migration", "India", "Cost Savings", "Implementation"],
@@ -23,7 +22,6 @@ const Blog = () => {
       title: "FreeSWITCH vs Asterisk: Which VoIP Platform is Better for Indian Businesses?",
       excerpt: "Comprehensive comparison of FreeSWITCH and Asterisk for Indian businesses. Understand the pros, cons, and best use cases for each platform in the Indian market.",
       category: "VoIP Platforms",
-      date: "2024-01-12",
       readTime: "6 min read",
       image: "https://images.unsplash.com/photo-1551434678-e076c223a692?w=400&h=250&fit=crop",
       tags: ["FreeSWITCH", "Asterisk", "Comparison", "VoIP Platforms"]
@@ -33,7 +31,6 @@ const Blog = () => {
       title: "Amazon Connect Implementation Guide: Setting Up Cloud Contact Center in India",
       excerpt: "Step-by-step guide to implementing Amazon Connect for Indian contact centers. Learn about AWS integration, cost optimization, and best practices for Indian businesses.",
       category: "Cloud VoIP",
-      date: "2024-01-10",
       readTime: "10 min read",
       image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=250&fit=crop",
       tags: ["Amazon Connect", "AWS", "Contact Center", "Cloud VoIP"]
@@ -43,7 +40,6 @@ const Blog = () => {
       title: "Voice AI Revolution: How Indian Businesses are Using Voice Bots to Increase Sales",
       excerpt: "Discover how Indian businesses are leveraging Voice AI to automate customer service, increase sales, and improve customer experience. Real case studies and implementation strategies.",
       category: "Voice AI",
-      date: "2024-01-08",
       readTime: "7 min read",
       image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=400&h=250&fit=crop",
       tags: ["Voice AI", "Voice Bots", "Customer Service", "Automation"]
@@ -53,7 +49,6 @@ const Blog = () => {
       title: "Google Dialogflow Implementation: Building Intelligent Chat Bots for Indian Markets",
       excerpt: "Complete guide to implementing Google Dialogflow for Indian businesses. Learn about multilingual support, local language integration, and cost-effective AI solutions.",
       category: "Voice AI",
-      date: "2024-01-05",
       readTime: "9 min read",
       image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=400&h=250&fit=crop",
       tags: ["Google Dialogflow", "Chat Bots", "AI", "Multilingual"]
@@ -63,7 +58,6 @@ const Blog = () => {
       title: "SIP Trunking Benefits for Indian Businesses: Cost Savings and Scalability",
       excerpt: "Understand how SIP trunking can reduce communication costs by up to 70% for Indian businesses. Learn about implementation, security, and scalability benefits.",
       category: "VoIP Solutions",
-      date: "2024-01-03",
       readTime: "5 min read",
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=250&fit=crop",
       tags: ["SIP Trunking", "Cost Savings", "Scalability", "VoIP"]
@@ -167,14 +161,6 @@ const Blog = () => {
                     <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs font-medium">
                       {post.category}
                     </span>
-                    <div className="flex items-center gap-1">
-                      <Calendar className="h-4 w-4" />
-                      {new Date(post.date).toLocaleDateString('en-US', { 
-                        year: 'numeric', 
-                        month: 'long', 
-                        day: 'numeric' 
-                      })}
-                    </div>
                     <div className="flex items-center gap-1">
                       <Clock className="h-4 w-4" />
                       {post.readTime}
