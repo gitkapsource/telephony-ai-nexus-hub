@@ -117,8 +117,8 @@ const AboutSection = () => {
                 <Globe className="h-6 w-6 text-orange-600" />
               </div>
               <div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">Pan-India Service</h3>
-                <p className="text-gray-600 text-sm">Serving clients across India with local expertise and understanding of regional requirements.</p>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">Global Coverage</h3>
+                <p className="text-gray-600 text-sm">Serving clients worldwide with expertise and understanding of global requirements.</p>
               </div>
             </div>
 

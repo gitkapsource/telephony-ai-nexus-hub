@@ -20,7 +20,7 @@
 3. **Local SEO**
    - India-specific content throughout
    - Local business schema markup
-   - Pan-India service area mentions
+   - Global coverage mentions
 
 ## 🔧 Next Steps to Complete SEO Setup
 

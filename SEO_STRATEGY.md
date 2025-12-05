@@ -19,7 +19,7 @@
 ### 3. Local SEO
 - **Geo-targeting**: Added India-specific content and location data
 - **Local Business Schema**: Proper local business markup
-- **Service Area**: Pan-India service mentioned throughout
+- **Service Area**: Global coverage mentioned throughout
 - **Contact Information**: Prominent phone and email display
 
 ## 🎯 Target Keywords Implemented

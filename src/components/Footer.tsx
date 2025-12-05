@@ -68,7 +68,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <Globe className="h-4 w-4 text-blue-400" />
-                <span className="text-gray-300">Pan-India Service</span>
+                <span className="text-gray-300">Global Coverage</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Clock className="h-4 w-4 text-blue-400" />
@@ -134,8 +134,8 @@ const Footer = () => {
             </div>
             <div className="flex flex-col items-center">
               <Globe className="h-8 w-8 text-purple-400 mb-2" />
-              <h4 className="font-semibold text-sm">Pan-India Service</h4>
-              <p className="text-gray-400 text-xs">Nationwide Coverage</p>
+              <h4 className="font-semibold text-sm">Global Coverage</h4>
+              <p className="text-gray-400 text-xs">Worldwide Service</p>
             </div>
             <div className="flex flex-col items-center">
               <Clock className="h-8 w-8 text-orange-400 mb-2" />

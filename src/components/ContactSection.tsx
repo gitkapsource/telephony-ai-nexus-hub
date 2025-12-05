@@ -229,7 +229,7 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900">Service Area</h3>
-                    <p className="text-gray-600">Pan-India Coverage</p>
+                    <p className="text-gray-600">Global Coverage</p>
                   </div>
                 </div>
 
