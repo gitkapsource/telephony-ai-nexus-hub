@@ -19,7 +19,7 @@ const HeroSection = () => {
                 IntelVoiz Communications
               </span>
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-                India's #1 VoIP & Voice AI
+                India's leading VoIP & Voice AI
                 <span className="block bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
                   Solutions Provider
                 </span>
