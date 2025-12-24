@@ -31,7 +31,7 @@ const LeadCapture = () => {
     {
       icon: Download,
       title: "VoIP Migration Guide",
-      description: "Complete 25-page guide to VoIP migration for Indian businesses",
+      description: "Complete 25-page guide to VoIP migration for n businesses",
       cta: "Download Free Guide",
       color: "from-blue-600 to-purple-600"
     },

@@ -8,11 +8,11 @@ const BlogPost = () => {
   const blogPosts = [
     {
       id: "1",
-      title: "Complete Guide to VoIP Migration in India: Step-by-Step Process",
-      excerpt: "Learn the complete process of migrating from traditional phone systems to VoIP. Discover how Indian businesses can save up to 60% on communication costs with proper VoIP implementation.",
+      title: "Complete Guide to VoIP Migration in : Step-by-Step Process",
+      excerpt: "Learn the complete process of migrating from traditional phone systems to VoIP. Discover how n businesses can save up to 60% on communication costs with proper VoIP implementation.",
       content: `
         <h2>Introduction to VoIP Migration</h2>
-        <p>Voice over Internet Protocol (VoIP) migration is a crucial step for Indian businesses looking to modernize their communication infrastructure. With the right approach, companies can save up to 60% on communication costs while improving call quality and reliability.</p>
+        <p>Voice over Internet Protocol (VoIP) migration is a crucial step for n businesses looking to modernize their communication infrastructure. With the right approach, companies can save up to 60% on communication costs while improving call quality and reliability.</p>
         
         <h2>Why Migrate to VoIP?</h2>
         <ul>
@@ -60,8 +60,8 @@ const BlogPost = () => {
           <li>Train staff on new system features</li>
         </ul>
         
-        <h2>Cost Considerations for Indian Businesses</h2>
-        <p>VoIP migration costs in India typically range from ₹50,000 to ₹5,00,000 depending on:</p>
+        <h2>Cost Considerations for n Businesses</h2>
+        <p>VoIP migration costs in  typically range from ₹50,000 to ₹5,00,000 depending on:</p>
         <ul>
           <li>Number of phone lines</li>
           <li>Chosen platform (FreeSWITCH, Asterisk, etc.)</li>
@@ -90,24 +90,24 @@ const BlogPost = () => {
         </ul>
         
         <h2>Conclusion</h2>
-        <p>VoIP migration is a strategic investment that can significantly improve your business communication while reducing costs. With proper planning and implementation, Indian businesses can successfully transition to modern VoIP systems and enjoy the benefits of advanced telephony features.</p>
+        <p>VoIP migration is a strategic investment that can significantly improve your business communication while reducing costs. With proper planning and implementation, n businesses can successfully transition to modern VoIP systems and enjoy the benefits of advanced telephony features.</p>
         
-        <p>For expert VoIP migration services in India, contact IntelVoiz at +91-7935901473 or email info@intelvoiz.com.</p>
+        <p>For expert VoIP migration services in , contact IntelVoiz at +91-7935901473 or email info@intelvoiz.com.</p>
       `,
       category: "VoIP Solutions",
       readTime: "8 min read",
       image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=800&h=400&fit=crop",
-      tags: ["VoIP Migration", "India", "Cost Savings", "Implementation"],
+      tags: ["VoIP Migration", "", "Cost Savings", "Implementation"],
       author: "IntelVoiz Team",
       featured: true
     },
     {
       id: "2",
-      title: "FreeSWITCH vs Asterisk: Which VoIP Platform is Better for Indian Businesses?",
-      excerpt: "Comprehensive comparison of FreeSWITCH and Asterisk for Indian businesses. Understand the pros, cons, and best use cases for each platform in the Indian market.",
+      title: "FreeSWITCH vs Asterisk: Which VoIP Platform is Better for n Businesses?",
+      excerpt: "Comprehensive comparison of FreeSWITCH and Asterisk for n businesses. Understand the pros, cons, and best use cases for each platform in the n market.",
       content: `
         <h2>Introduction</h2>
-        <p>Choosing the right VoIP platform is crucial for Indian businesses. FreeSWITCH and Asterisk are two of the most popular open-source VoIP platforms, each with unique strengths and use cases.</p>
+        <p>Choosing the right VoIP platform is crucial for n businesses. FreeSWITCH and Asterisk are two of the most popular open-source VoIP platforms, each with unique strengths and use cases.</p>
         
         <h2>FreeSWITCH Overview</h2>
         <p>FreeSWITCH is a scalable open-source communications platform designed for creating voice, video, and text applications.</p>
@@ -147,7 +147,7 @@ const BlogPost = () => {
           <li><strong>Resource Usage:</strong> Higher memory and CPU requirements</li>
         </ul>
         
-        <h2>Comparison for Indian Businesses</h2>
+        <h2>Comparison for n Businesses</h2>
         
         <h3>Small to Medium Businesses (SMBs)</h3>
         <p><strong>Recommended:</strong> Asterisk</p>
@@ -156,7 +156,7 @@ const BlogPost = () => {
           <li>Easier to set up and configure</li>
           <li>Abundant local support and documentation</li>
           <li>Cost-effective for smaller deployments</li>
-          <li>Familiar to most Indian VoIP consultants</li>
+          <li>Familiar to most n VoIP consultants</li>
         </ul>
         
         <h3>Large Enterprises</h3>
@@ -179,7 +179,7 @@ const BlogPost = () => {
           <li>Integration with modern contact center features</li>
         </ul>
         
-        <h2>Cost Considerations in India</h2>
+        <h2>Cost Considerations in </h2>
         
         <h3>Implementation Costs</h3>
         <ul>
@@ -221,7 +221,7 @@ const BlogPost = () => {
         
         <h2>Support and Community</h2>
         
-        <h3>Local Support in India</h3>
+        <h3>Local Support in </h3>
         <ul>
           <li><strong>Asterisk:</strong> Extensive local expertise available</li>
           <li><strong>FreeSWITCH:</strong> Limited but growing local expertise</li>
@@ -240,7 +240,7 @@ const BlogPost = () => {
           <li><strong>FreeSWITCH to Asterisk:</strong> Generally easier due to Asterisk's flexibility</li>
         </ul>
         
-        <h2>Recommendations for Indian Businesses</h2>
+        <h2>Recommendations for n Businesses</h2>
         
         <h3>Choose Asterisk if:</h3>
         <ul>
@@ -261,7 +261,7 @@ const BlogPost = () => {
         </ul>
         
         <h2>Conclusion</h2>
-        <p>Both FreeSWITCH and Asterisk are excellent VoIP platforms, but they serve different needs. For most Indian SMBs, Asterisk offers the best balance of features, ease of use, and local support. For larger enterprises with high call volumes, FreeSWITCH provides superior performance and scalability.</p>
+        <p>Both FreeSWITCH and Asterisk are excellent VoIP platforms, but they serve different needs. For most n SMBs, Asterisk offers the best balance of features, ease of use, and local support. For larger enterprises with high call volumes, FreeSWITCH provides superior performance and scalability.</p>
         
         <p>Contact IntelVoiz at +91-7935901473 for expert consultation on choosing the right VoIP platform for your business.</p>
       `,
@@ -273,8 +273,8 @@ const BlogPost = () => {
     },
     {
       id: "3",
-      title: "Amazon Connect Implementation Guide: Setting Up Cloud Contact Center in India",
-      excerpt: "Step-by-step guide to implementing Amazon Connect for Indian contact centers. Learn about AWS integration, cost optimization, and best practices for Indian businesses.",
+      title: "Amazon Connect Implementation Guide: Setting Up Cloud Contact Center in ",
+      excerpt: "Step-by-step guide to implementing Amazon Connect for n contact centers. Learn about AWS integration, cost optimization, and best practices for n businesses.",
       category: "Cloud VoIP",
       readTime: "10 min read",
       image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=400&fit=crop",
@@ -282,9 +282,9 @@ const BlogPost = () => {
       author: "IntelVoiz Team",
       content: `
         <h2>Introduction to Amazon Connect</h2>
-        <p>Amazon Connect is a cloud-based contact center service that enables businesses to deliver superior customer service at a lower cost. For Indian businesses, it offers a scalable solution that can grow with your needs.</p>
+        <p>Amazon Connect is a cloud-based contact center service that enables businesses to deliver superior customer service at a lower cost. For n businesses, it offers a scalable solution that can grow with your needs.</p>
         
-        <h2>Benefits of Amazon Connect for Indian Businesses</h2>
+        <h2>Benefits of Amazon Connect for n Businesses</h2>
         <ul>
           <li><strong>Cost Effective:</strong> Pay only for what you use</li>
           <li><strong>Scalable:</strong> Handle seasonal spikes easily</li>
@@ -297,7 +297,7 @@ const BlogPost = () => {
         <h3>Step 1: AWS Account Setup</h3>
         <p>Set up your AWS account and configure billing:</p>
         <ul>
-          <li>Create AWS account with Indian billing</li>
+          <li>Create AWS account with n billing</li>
           <li>Set up payment methods</li>
           <li>Configure cost alerts</li>
           <li>Enable required services</li>
@@ -321,7 +321,7 @@ const BlogPost = () => {
           <li>Test call flow</li>
         </ul>
         
-        <h2>Cost Optimization for Indian Businesses</h2>
+        <h2>Cost Optimization for n Businesses</h2>
         
         <h3>Pricing Structure</h3>
         <ul>
@@ -338,10 +338,10 @@ const BlogPost = () => {
           <li>Monitor usage patterns</li>
         </ul>
         
-        <h2>Integration with Indian Business Systems</h2>
+        <h2>Integration with n Business Systems</h2>
         
         <h3>CRM Integration</h3>
-        <p>Connect with popular Indian CRM systems:</p>
+        <p>Connect with popular n CRM systems:</p>
         <ul>
           <li>Salesforce integration</li>
           <li>Zoho CRM connection</li>
@@ -349,14 +349,14 @@ const BlogPost = () => {
         </ul>
         
         <h3>Payment Gateway Integration</h3>
-        <p>Integrate with Indian payment gateways:</p>
+        <p>Integrate with n payment gateways:</p>
         <ul>
           <li>Razorpay integration</li>
           <li>PayU integration</li>
           <li>PhonePe integration</li>
         </ul>
         
-        <h2>Best Practices for Indian Contact Centers</h2>
+        <h2>Best Practices for n Contact Centers</h2>
         
         <h3>Language Support</h3>
         <ul>
@@ -368,28 +368,28 @@ const BlogPost = () => {
         <h3>Compliance</h3>
         <ul>
           <li>GDPR compliance</li>
-          <li>Indian data protection laws</li>
+          <li>n data protection laws</li>
           <li>Call recording regulations</li>
         </ul>
         
         <h2>Conclusion</h2>
-        <p>Amazon Connect provides Indian businesses with a powerful, scalable contact center solution. With proper implementation and optimization, it can significantly improve customer service while reducing costs.</p>
+        <p>Amazon Connect provides n businesses with a powerful, scalable contact center solution. With proper implementation and optimization, it can significantly improve customer service while reducing costs.</p>
         
-        <p>For expert Amazon Connect implementation in India, contact IntelVoiz at +91-7935901473.</p>
+        <p>For expert Amazon Connect implementation in , contact IntelVoiz at +91-7935901473.</p>
       `
     },
     {
       id: "4",
-      title: "Voice AI Revolution: How Indian Businesses are Using Voice Bots to Increase Sales",
-      excerpt: "Discover how Indian businesses are leveraging Voice AI to automate customer service, increase sales, and improve customer experience. Real case studies and implementation strategies.",
+      title: "Voice AI Revolution: How n Businesses are Using Voice Bots to Increase Sales",
+      excerpt: "Discover how n businesses are leveraging Voice AI to automate customer service, increase sales, and improve customer experience. Real case studies and implementation strategies.",
       category: "Voice AI",
       readTime: "7 min read",
       image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800&h=400&fit=crop",
       tags: ["Voice AI", "Voice Bots", "Customer Service", "Automation"],
       author: "IntelVoiz Team",
       content: `
-        <h2>The Voice AI Revolution in India</h2>
-        <p>Voice AI is transforming how Indian businesses interact with customers. From automated customer service to sales automation, Voice Bots are becoming essential tools for modern businesses.</p>
+        <h2>The Voice AI Revolution in </h2>
+        <p>Voice AI is transforming how n businesses interact with customers. From automated customer service to sales automation, Voice Bots are becoming essential tools for modern businesses.</p>
         
         <h2>How Voice AI Works</h2>
         <p>Voice AI combines several technologies:</p>
@@ -400,7 +400,7 @@ const BlogPost = () => {
           <li><strong>Machine Learning:</strong> Improves over time</li>
         </ul>
         
-        <h2>Indian Business Use Cases</h2>
+        <h2>n Business Use Cases</h2>
         
         <h3>Customer Service Automation</h3>
         <ul>
@@ -471,15 +471,15 @@ const BlogPost = () => {
         </ul>
         
         <h2>Conclusion</h2>
-        <p>Voice AI is not just a trend—it's a fundamental shift in how businesses interact with customers. Indian businesses that adopt Voice AI early will gain significant competitive advantages.</p>
+        <p>Voice AI is not just a trend—it's a fundamental shift in how businesses interact with customers. n businesses that adopt Voice AI early will gain significant competitive advantages.</p>
         
         <p>Contact IntelVoiz at +91-7935901473 for expert Voice AI implementation services.</p>
       `
     },
     {
       id: "5",
-      title: "Google Dialogflow Implementation: Building Intelligent Chat Bots for Indian Markets",
-      excerpt: "Complete guide to implementing Google Dialogflow for Indian businesses. Learn about multilingual support, local language integration, and cost-effective AI solutions.",
+      title: "Google Dialogflow Implementation: Building Intelligent Chat Bots for n Markets",
+      excerpt: "Complete guide to implementing Google Dialogflow for n businesses. Learn about multilingual support, local language integration, and cost-effective AI solutions.",
       category: "Voice AI",
       readTime: "9 min read",
       image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&h=400&fit=crop",
@@ -487,9 +487,9 @@ const BlogPost = () => {
       author: "IntelVoiz Team",
       content: `
         <h2>Introduction to Google Dialogflow</h2>
-        <p>Google Dialogflow is a powerful natural language processing platform that enables businesses to build intelligent conversational agents. For Indian businesses, it offers excellent support for multiple languages and regional dialects.</p>
+        <p>Google Dialogflow is a powerful natural language processing platform that enables businesses to build intelligent conversational agents. For n businesses, it offers excellent support for multiple languages and regional dialects.</p>
         
-        <h2>Key Features for Indian Businesses</h2>
+        <h2>Key Features for n Businesses</h2>
         <ul>
           <li><strong>Multilingual Support:</strong> Hindi, English, and regional languages</li>
           <li><strong>Voice Integration:</strong> Speech-to-text and text-to-speech</li>
@@ -566,7 +566,7 @@ const BlogPost = () => {
           <li>Phone system integration</li>
         </ul>
         
-        <h2>Best Practices for Indian Markets</h2>
+        <h2>Best Practices for n Markets</h2>
         
         <h3>Cultural Sensitivity</h3>
         <ul>
@@ -600,15 +600,15 @@ const BlogPost = () => {
         </ul>
         
         <h2>Conclusion</h2>
-        <p>Google Dialogflow provides Indian businesses with a powerful platform for building intelligent conversational agents. With proper implementation and optimization, it can significantly improve customer engagement and operational efficiency.</p>
+        <p>Google Dialogflow provides n businesses with a powerful platform for building intelligent conversational agents. With proper implementation and optimization, it can significantly improve customer engagement and operational efficiency.</p>
         
-        <p>For expert Dialogflow implementation in India, contact IntelVoiz at +91-7935901473.</p>
+        <p>For expert Dialogflow implementation in , contact IntelVoiz at +91-7935901473.</p>
       `
     },
     {
       id: "6",
-      title: "SIP Trunking Benefits for Indian Businesses: Cost Savings and Scalability",
-      excerpt: "Understand how SIP trunking can reduce communication costs by up to 70% for Indian businesses. Learn about implementation, security, and scalability benefits.",
+      title: "SIP Trunking Benefits for n Businesses: Cost Savings and Scalability",
+      excerpt: "Understand how SIP trunking can reduce communication costs by up to 70% for n businesses. Learn about implementation, security, and scalability benefits.",
       category: "VoIP Solutions",
       readTime: "5 min read",
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=400&fit=crop",
@@ -618,7 +618,7 @@ const BlogPost = () => {
         <h2>What is SIP Trunking?</h2>
         <p>SIP (Session Initiation Protocol) trunking is a method of delivering voice and other unified communications services over the internet. It connects your business phone system to the public switched telephone network (PSTN) via the internet.</p>
         
-        <h2>Benefits for Indian Businesses</h2>
+        <h2>Benefits for n Businesses</h2>
         
         <h3>Cost Savings</h3>
         <ul>
@@ -688,7 +688,7 @@ const BlogPost = () => {
           <li>Call monitoring</li>
         </ul>
         
-        <h2>Cost Analysis for Indian Businesses</h2>
+        <h2>Cost Analysis for n Businesses</h2>
         
         <h3>Traditional vs SIP Trunking</h3>
         <table>
@@ -733,9 +733,9 @@ const BlogPost = () => {
         </ul>
         
         <h2>Conclusion</h2>
-        <p>SIP trunking offers Indian businesses significant cost savings and operational benefits. With proper implementation and management, it can transform your business communication infrastructure.</p>
+        <p>SIP trunking offers n businesses significant cost savings and operational benefits. With proper implementation and management, it can transform your business communication infrastructure.</p>
         
-        <p>For expert SIP trunking services in India, contact IntelVoiz at +91-7935901473.</p>
+        <p>For expert SIP trunking services in , contact IntelVoiz at +91-7935901473.</p>
       `
     }
   ];
@@ -850,7 +850,7 @@ const BlogPost = () => {
                 Need VoIP or Voice AI Solutions?
               </h3>
               <p className="text-gray-600 mb-6">
-                Get expert consultation from India's leading VoIP and Voice AI specialists. 
+                Get expert consultation from 's leading VoIP and Voice AI specialists. 
                 Contact us for a free assessment of your communication needs.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">

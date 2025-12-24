@@ -8,16 +8,16 @@ const ContactSection = () => {
 
   const faqs = [
     {
-      question: "What VoIP services does IntelVoiz provide in India?",
-      answer: "IntelVoiz provides comprehensive VoIP services including FreeSWITCH and Asterisk implementation, Amazon Connect and 3CX setup, SIP trunking, PBX systems, VoIP migration, and 24/7 technical support across India."
+      question: "What VoIP services does IntelVoiz provide in ?",
+      answer: "IntelVoiz provides comprehensive VoIP services including FreeSWITCH and Asterisk implementation, Amazon Connect and 3CX setup, SIP trunking, PBX systems, VoIP migration, and 24/7 technical support across ."
     },
     {
       question: "What Voice AI solutions do you offer?",
       answer: "We offer Voice AI solutions including Google Dialogflow implementation, N8N automation workflows, Twilio Voice API integration, custom Voice Bot development, Chat Bot creation, and conversational AI solutions."
     },
     {
-      question: "Do you provide VoIP consulting in India?",
-      answer: "Yes, IntelVoiz is India's leading VoIP consulting firm, providing expert IP Telephony solutions, Voice AI services, and technical support across India with over 10 years of experience and 25+ successful projects."
+      question: "Do you provide VoIP consulting in ?",
+      answer: "Yes, IntelVoiz is 's leading VoIP consulting firm, providing expert IP Telephony solutions, Voice AI services, and technical support across  with over 10 years of experience and 25+ successful projects."
     },
     {
       question: "What VoIP platforms do you support?",
@@ -94,7 +94,7 @@ const ContactSection = () => {
             Contact IntelVoiz - VoIP & Voice AI Experts
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Get expert VoIP and Voice AI consultation from India's leading telecommunications experts. 
+            Get expert VoIP and Voice AI consultation from 's leading telecommunications experts. 
             Consultation available for all VoIP and Voice AI projects.
           </p>
         </div>
@@ -214,6 +214,16 @@ const ContactSection = () => {
                 </div>
 
                 <div className="flex items-center space-x-4">
+                  <div className="flex items-center justify-center w-12 h-12 bg-blue-100 rounded-lg">
+                    <Phone className="h-6 w-6 text-blue-600" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-gray-900">Telegram</h3>
+                    <p className="text-gray-600">+91-7935901473</p>
+                  </div>
+                </div>
+
+                <div className="flex items-center space-x-4">
                   <div className="flex items-center justify-center w-12 h-12 bg-purple-100 rounded-lg">
                     <Mail className="h-6 w-6 text-purple-600" />
                   </div>
@@ -285,7 +295,7 @@ const ContactSection = () => {
               Frequently Asked Questions - VoIP & Voice AI
             </h2>
             <p className="text-lg text-gray-600">
-              Common questions about our VoIP and Voice AI services in India
+              Common questions about our VoIP and Voice AI services in 
             </p>
           </div>
 

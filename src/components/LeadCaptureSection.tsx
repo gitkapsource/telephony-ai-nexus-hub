@@ -85,7 +85,7 @@ const LeadCaptureSection = () => {
             Book VoIP & Voice AI Consultation
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Join 25+ Indian businesses that have transformed their communication with our expert VoIP and Voice AI solutions.
+            Join 25+ n businesses that have transformed their communication with our expert VoIP and Voice AI solutions.
           </p>
         </div>
 

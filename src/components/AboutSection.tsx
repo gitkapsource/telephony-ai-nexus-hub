@@ -11,7 +11,7 @@ const AboutSection = () => {
   const expertise = [
     {
       title: "VoIP & IP Telephony Experts",
-      description: "Certified experts in FreeSWITCH, Asterisk, Amazon Connect, 3CX, Twilio, SIP trunking, and PBX systems. We've successfully implemented VoIP solutions for businesses across India."
+      description: "Certified experts in FreeSWITCH, Asterisk, Amazon Connect, 3CX, Twilio, SIP trunking, and PBX systems. We've successfully implemented VoIP solutions for businesses across ."
     },
     {
       title: "Voice AI & Chat Bot Specialists",
@@ -30,10 +30,10 @@ const AboutSection = () => {
           <div className="space-y-8">
             <div>
               <h1 className="text-4xl font-bold text-gray-900 mb-6">
-                India's Leading VoIP & Voice AI Experts
+                's Leading VoIP & Voice AI Experts
               </h1>
               <p className="text-lg text-gray-600 leading-relaxed mb-6">
-                IntelVoiz is India's premier consulting firm specializing in VoIP, IP Telephony, and Voice AI solutions. 
+                IntelVoiz is 's premier consulting firm specializing in VoIP, IP Telephony, and Voice AI solutions. 
                 With over a decade of experience, we help businesses transform their communication infrastructure 
                 with cutting-edge technology including FreeSWITCH, Asterisk, Amazon Connect, 3CX, Twilio, 
                 Google Dialogflow, and N8N automation.
@@ -41,7 +41,7 @@ const AboutSection = () => {
               <p className="text-lg text-gray-600 leading-relaxed">
                 Our team of certified VoIP engineers and AI specialists deliver custom solutions that reduce costs, 
                 improve efficiency, and enhance customer experience through advanced Voice AI and Chat Bot technologies. 
-                We serve clients across India with 24/7 technical support and comprehensive VoIP consulting services.
+                We serve clients across  with 24/7 technical support and comprehensive VoIP consulting services.
               </p>
             </div>
           </div>
@@ -77,7 +77,7 @@ const AboutSection = () => {
               Why Choose IntelVoiz for VoIP & Voice AI Solutions?
             </h2>
             <p className="text-lg text-gray-600">
-              India's trusted partner for comprehensive VoIP and Voice AI consulting services
+              's trusted partner for comprehensive VoIP and Voice AI consulting services
             </p>
           </div>
 
@@ -150,7 +150,7 @@ const AboutSection = () => {
             Ready to Transform Your Business Communication?
           </h3>
           <p className="text-lg text-gray-600 mb-8">
-            Get expert VoIP and Voice AI consultation from India's leading telecommunications experts
+            Get expert VoIP and Voice AI consultation from 's leading telecommunications experts
           </p>
           <button 
             onClick={() => {

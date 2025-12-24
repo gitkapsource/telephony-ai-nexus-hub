@@ -53,8 +53,8 @@ const Footer = () => {
               />
             </div>
             <p className="text-gray-300 mb-6 leading-relaxed">
-              India's leading VoIP and Voice AI solutions provider. Expert IP Telephony, Voice Bots, 
-              Chat Bots, SIP trunking, and telecommunications consulting services across India.
+              's leading VoIP and Voice AI solutions provider. Expert IP Telephony, Voice Bots, 
+              Chat Bots, SIP trunking, and telecommunications consulting services across .
             </p>
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
@@ -147,9 +147,9 @@ const Footer = () => {
         {/* SEO Keywords Section */}
         <div className="border-t border-gray-800 mt-8 pt-8">
           <div className="text-center">
-            <h4 className="text-sm font-semibold text-gray-400 mb-4">VoIP & Voice AI Solutions in India</h4>
+            <h4 className="text-sm font-semibold text-gray-400 mb-4">VoIP & Voice AI Solutions in </h4>
             <div className="flex flex-wrap justify-center gap-2 text-xs text-gray-500">
-              <span>VoIP Services India</span>
+              <span>VoIP Services </span>
               <span>•</span>
               <span>Voice AI Solutions</span>
               <span>•</span>
@@ -188,11 +188,11 @@ const Footer = () => {
         <div className="border-t border-gray-800 mt-8 pt-8 text-center">
           <p className="text-gray-400 text-sm">
             © IntelVoiz - VoIP & Voice AI Experts. All rights reserved. 
-            India's leading VoIP and Voice AI solutions provider.
+            's leading VoIP and Voice AI solutions provider.
           </p>
           <p className="text-gray-500 text-xs mt-2">
             Specializing in FreeSWITCH, Asterisk, Amazon Connect, 3CX, Twilio, Google Dialogflow, 
-            N8N automation, SIP trunking, PBX systems, Voice AI, and Chat Bot solutions across India.
+            N8N automation, SIP trunking, PBX systems, Voice AI, and Chat Bot solutions across .
           </p>
         </div>
       </div>

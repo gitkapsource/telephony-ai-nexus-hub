@@ -65,7 +65,7 @@ const ServicesSection = () => {
         "OpenSIPS/Kamailio Configuration",
         "Amazon Connect Consulting Services",
         "SIP Trunking Optimization",
-        "VoIP Call Centre Setup India"
+        "VoIP Call Centre Setup "
       ]
     },
     {
@@ -108,12 +108,12 @@ const ServicesSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">
-            Expert VoIP and Voice AI Services in India
+            Expert VoIP and Voice AI Services in 
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Comprehensive VoIP consulting and Voice AI solutions designed to modernize your business 
             communication with FreeSWITCH, Asterisk, Amazon Connect, 3CX, Twilio, Google Dialogflow, 
-            and N8N automation. Leading VoIP provider in India with 10+ years of experience.
+            and N8N automation. Leading VoIP provider in  with 10+ years of experience.
           </p>
         </div>
 
@@ -156,7 +156,7 @@ const ServicesSection = () => {
             </h3>
             <p className="text-lg text-gray-600">
               Specialized expertise across multiple VoIP platforms, Voice AI technologies, and automation tools. 
-              India's trusted VoIP and Voice AI consulting partner.
+              's trusted VoIP and Voice AI consulting partner.
             </p>
           </div>
 

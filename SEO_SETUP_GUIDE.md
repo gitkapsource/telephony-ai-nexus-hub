@@ -18,7 +18,7 @@
    - Trust indicators and statistics
 
 3. **Local SEO**
-   - India-specific content throughout
+   - -specific content throughout
    - Local business schema markup
    - Global coverage mentions
 
@@ -77,7 +77,7 @@ Choose one of these methods:
 4. Category: "Telecommunications Service"
 
 **Step 2: Complete Profile**
-- **Address**: Your business address in India
+- **Address**: Your business address in 
 - **Phone**: +91-7935901473
 - **Website**: https://intelvoiz.com
 - **Hours**: 9 AM - 6 PM (or your actual hours)
@@ -110,7 +110,7 @@ Weekly topics for next 3 months:
 - "FreeSWITCH Implementation Guide"
 - "Asterisk vs FreeSWITCH Comparison"
 - "Amazon Connect Setup Tutorial"
-- "3CX vs Asterisk for Indian Businesses"
+- "3CX vs Asterisk for n Businesses"
 
 **Step 2: Create Video Content**
 - VoIP migration process video
@@ -123,16 +123,16 @@ Weekly topics for next 3 months:
 **Step 1: Directory Submissions**
 Submit to these directories:
 - JustDial
-- IndiaMART
-- TradeIndia
+- MART
+- Trade
 - Sulekha
-- Yellow Pages India
-- Local directories in major Indian cities
+- Yellow Pages 
+- Local directories in major n cities
 
 **Step 2: Guest Posting**
 Target these websites:
 - VoIP blogs and forums
-- Tech blogs in India
+- Tech blogs in 
 - Business technology websites
 - Telecommunications industry sites
 

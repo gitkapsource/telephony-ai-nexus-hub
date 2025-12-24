@@ -10,7 +10,7 @@
   - Category: "Telecommunications Service"
   - Phone: +91-7935901473
   - Website: https://intelvoiz.com
-  - Address: Your business address in India
+  - Address: Your business address in 
   - Hours: 9 AM - 6 PM (or actual hours)
 
 - **Add Photos**
@@ -29,19 +29,19 @@
 
 #### 2. **Local Directory Submissions** (Priority 1)
 Submit to these directories TODAY:
-- **JustDial** - Most important for India
-- **IndiaMART** - B2B leads
-- **TradeIndia** - Business directory
+- **JustDial** - Most important for 
+- **MART** - B2B leads
+- **Trade** - Business directory
 - **Sulekha** - Local services
-- **Yellow Pages India**
+- **Yellow Pages **
 - **Google Maps**
 - **Facebook Business Page**
 
 #### 3. **Content Marketing** (Priority 2)
 - **Create YouTube Videos** (3-5 videos this week)
-  - "VoIP Migration Guide for Indian Businesses"
+  - "VoIP Migration Guide for n Businesses"
   - "FreeSWITCH vs Asterisk Comparison"
-  - "Voice AI Benefits for Indian Companies"
+  - "Voice AI Benefits for n Companies"
   - "Amazon Connect Implementation Tutorial"
 
 - **LinkedIn Posts** (Daily posts)
@@ -61,16 +61,16 @@ Submit to these directories TODAY:
 #### 1. **Google Ads** (Immediate Results)
 - Budget: ₹5,000-10,000/month
 - Keywords:
-  - "VoIP services India"
+  - "VoIP services "
   - "Voice AI consulting"
-  - "FreeSWITCH support India"
-  - "VoIP migration India"
+  - "FreeSWITCH support "
+  - "VoIP migration "
   - "Amazon Connect implementation"
 
-#### 2. **Facebook Ads** (Target Indian Businesses)
+#### 2. **Facebook Ads** (Target n Businesses)
 - Target: Business owners, IT managers
 - Age: 25-55
-- Location: Major Indian cities
+- Location: Major n cities
 - Interests: VoIP, telecommunications, business technology
 
 #### 3. **LinkedIn Ads** (B2B Leads)
@@ -119,17 +119,17 @@ Submit to these directories TODAY:
 ### 🎯 **High-Converting Keywords to Target**
 
 #### **Primary Keywords:**
-- "VoIP services India"
-- "Voice AI consulting India"
-- "FreeSWITCH support India"
-- "VoIP migration India"
-- "Amazon Connect implementation India"
+- "VoIP services "
+- "Voice AI consulting "
+- "FreeSWITCH support "
+- "VoIP migration "
+- "Amazon Connect implementation "
 
 #### **Long-tail Keywords:**
-- "VoIP migration cost India"
-- "FreeSWITCH vs Asterisk India"
-- "Voice AI for Indian businesses"
-- "SIP trunking services India"
+- "VoIP migration cost "
+- "FreeSWITCH vs Asterisk "
+- "Voice AI for n businesses"
+- "SIP trunking services "
 - "VoIP consulting Mumbai/Delhi/Bangalore"
 
 ### 📱 **Mobile Optimization**
@@ -172,7 +172,7 @@ Submit to these directories TODAY:
 
 #### **Today:**
 1. Create Google My Business profile
-2. Submit to JustDial and IndiaMART
+2. Submit to JustDial and MART
 3. Create first YouTube video
 4. Set up Google Ads campaign
 

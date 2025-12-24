@@ -16,9 +16,9 @@ import LeadCapture from '@/components/LeadCapture';
 const Index = () => {
   const seoData = {
     pageTitle: "IntelVoiz - #1 VoIP & Voice AI Solutions Provider | IP Telephony & Chat Bot Experts",
-    pageDescription: "India's leading VoIP and Voice AI solutions provider. Expert IP Telephony, Voice Bots, Chat Bots, SIP Trunking, PBX Systems, FreeSWITCH, Asterisk, Amazon Connect, 3CX, Twilio consulting.",
+    pageDescription: "'s leading VoIP and Voice AI solutions provider. Expert IP Telephony, Voice Bots, Chat Bots, SIP Trunking, PBX Systems, FreeSWITCH, Asterisk, Amazon Connect, 3CX, Twilio consulting.",
     keywords: [
-      "VoIP Services India",
+      "VoIP Services ",
       "Voice AI Solutions",
       "IP Telephony Consulting",
       "FreeSWITCH Support",

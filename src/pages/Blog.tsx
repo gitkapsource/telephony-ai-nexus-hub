@@ -9,18 +9,18 @@ const Blog = () => {
   const blogPosts = [
     {
       id: "1",
-      title: "Complete Guide to VoIP Migration in India: Step-by-Step Process",
-      excerpt: "Learn the complete process of migrating from traditional phone systems to VoIP. Discover how Indian businesses can save up to 60% on communication costs with proper VoIP implementation.",
+      title: "Complete Guide to VoIP Migration in : Step-by-Step Process",
+      excerpt: "Learn the complete process of migrating from traditional phone systems to VoIP. Discover how n businesses can save up to 60% on communication costs with proper VoIP implementation.",
       category: "VoIP Solutions",
       readTime: "8 min read",
       image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=400&h=250&fit=crop",
-      tags: ["VoIP Migration", "India", "Cost Savings", "Implementation"],
+      tags: ["VoIP Migration", "", "Cost Savings", "Implementation"],
       featured: true
     },
     {
       id: "2",
-      title: "FreeSWITCH vs Asterisk: Which VoIP Platform is Better for Indian Businesses?",
-      excerpt: "Comprehensive comparison of FreeSWITCH and Asterisk for Indian businesses. Understand the pros, cons, and best use cases for each platform in the Indian market.",
+      title: "FreeSWITCH vs Asterisk: Which VoIP Platform is Better for n Businesses?",
+      excerpt: "Comprehensive comparison of FreeSWITCH and Asterisk for n businesses. Understand the pros, cons, and best use cases for each platform in the n market.",
       category: "VoIP Platforms",
       readTime: "6 min read",
       image: "https://images.unsplash.com/photo-1551434678-e076c223a692?w=400&h=250&fit=crop",
@@ -28,8 +28,8 @@ const Blog = () => {
     },
     {
       id: "3",
-      title: "Amazon Connect Implementation Guide: Setting Up Cloud Contact Center in India",
-      excerpt: "Step-by-step guide to implementing Amazon Connect for Indian contact centers. Learn about AWS integration, cost optimization, and best practices for Indian businesses.",
+      title: "Amazon Connect Implementation Guide: Setting Up Cloud Contact Center in ",
+      excerpt: "Step-by-step guide to implementing Amazon Connect for n contact centers. Learn about AWS integration, cost optimization, and best practices for n businesses.",
       category: "Cloud VoIP",
       readTime: "10 min read",
       image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=250&fit=crop",
@@ -37,8 +37,8 @@ const Blog = () => {
     },
     {
       id: "4",
-      title: "Voice AI Revolution: How Indian Businesses are Using Voice Bots to Increase Sales",
-      excerpt: "Discover how Indian businesses are leveraging Voice AI to automate customer service, increase sales, and improve customer experience. Real case studies and implementation strategies.",
+      title: "Voice AI Revolution: How n Businesses are Using Voice Bots to Increase Sales",
+      excerpt: "Discover how n businesses are leveraging Voice AI to automate customer service, increase sales, and improve customer experience. Real case studies and implementation strategies.",
       category: "Voice AI",
       readTime: "7 min read",
       image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=400&h=250&fit=crop",
@@ -46,8 +46,8 @@ const Blog = () => {
     },
     {
       id: "5",
-      title: "Google Dialogflow Implementation: Building Intelligent Chat Bots for Indian Markets",
-      excerpt: "Complete guide to implementing Google Dialogflow for Indian businesses. Learn about multilingual support, local language integration, and cost-effective AI solutions.",
+      title: "Google Dialogflow Implementation: Building Intelligent Chat Bots for n Markets",
+      excerpt: "Complete guide to implementing Google Dialogflow for n businesses. Learn about multilingual support, local language integration, and cost-effective AI solutions.",
       category: "Voice AI",
       readTime: "9 min read",
       image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=400&h=250&fit=crop",
@@ -55,8 +55,8 @@ const Blog = () => {
     },
     {
       id: "6",
-      title: "SIP Trunking Benefits for Indian Businesses: Cost Savings and Scalability",
-      excerpt: "Understand how SIP trunking can reduce communication costs by up to 70% for Indian businesses. Learn about implementation, security, and scalability benefits.",
+      title: "SIP Trunking Benefits for n Businesses: Cost Savings and Scalability",
+      excerpt: "Understand how SIP trunking can reduce communication costs by up to 70% for n businesses. Learn about implementation, security, and scalability benefits.",
       category: "VoIP Solutions",
       readTime: "5 min read",
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=250&fit=crop",
@@ -92,7 +92,7 @@ const Blog = () => {
               VoIP & Voice AI Blog
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Expert insights, implementation guides, and industry best practices for Indian businesses
+              Expert insights, implementation guides, and industry best practices for n businesses
             </p>
           </div>
         </div>
@@ -226,7 +226,7 @@ const Blog = () => {
           </h3>
           <p className="text-blue-100 mb-6 max-w-2xl mx-auto">
             Get the latest articles, implementation guides, and industry insights delivered to your inbox. 
-            Join 25+ Indian businesses already subscribed.
+            Join 25+ n businesses already subscribed.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
             <input
