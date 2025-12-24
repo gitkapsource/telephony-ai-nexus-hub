@@ -23,7 +23,7 @@ const HeroSection = () => {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div className="space-y-8">
             <div className="space-y-6">
-              <span className="inline-flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-100 text-blue-700 text-sm font-semibold tracking-wide shadow-sm">
+              <span className="inline-flex items-center px-5 py-2.5 rounded-full bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 text-white text-sm sm:text-base font-semibold tracking-[0.18em] uppercase shadow-lg shadow-blue-500/30">
                 IntelVoiz Communications
               </span>
               <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold text-gray-900 leading-[1.1] tracking-tight">
