@@ -27,10 +27,7 @@ const HeroSection = () => {
                 IntelVoiz Communications
               </span>
               <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold text-gray-900 leading-[1.1] tracking-tight">
-                's leading VoIP & Voice AI
-                <span className="block bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent mt-2">
-                  Solutions Provider
-                </span>
+                Global Leader in VoIP & Voice AI Solutions
               </h1>
               <p className="text-xl text-gray-600 max-w-2xl leading-relaxed">
                 Expert VoIP consulting, IP Telephony solutions, and Voice AI automation services. 

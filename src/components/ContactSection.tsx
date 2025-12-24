@@ -214,8 +214,17 @@ const ContactSection = () => {
                 </div>
 
                 <div className="flex items-center space-x-4">
-                  <div className="flex items-center justify-center w-12 h-12 bg-blue-100 rounded-lg">
-                    <Phone className="h-6 w-6 text-blue-600" />
+                  <div className="flex items-center justify-center w-12 h-12 rounded-lg">
+                    <svg
+                      viewBox="0 0 240 240"
+                      className="h-10 w-10"
+                    >
+                      <circle cx="120" cy="120" r="120" fill="#2AABEE" />
+                      <path
+                        d="M52 123.5L170 75.5C175 73.5 179.5 76.5 178 82.5L157 172.5C155.5 178.5 151.5 180 146.5 177L116 155L101 169.5C99.5 171 98.5 172 96 172L98 141L157 90C159.5 87.5 156.5 86.5 153.5 88.5L79 135.5L50.5 126.5C44.5 124.5 44.5 120.5 52 123.5Z"
+                        fill="#FFFFFF"
+                      />
+                    </svg>
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900">Telegram</h3>

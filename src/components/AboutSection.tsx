@@ -30,7 +30,7 @@ const AboutSection = () => {
           <div className="space-y-8">
             <div>
               <h1 className="text-4xl font-bold text-gray-900 mb-6">
-                's Leading VoIP & Voice AI Experts
+                Leading VoIP & Voice AI Expert Solutions
               </h1>
               <p className="text-lg text-gray-600 leading-relaxed mb-6">
                 IntelVoiz is 's premier consulting firm specializing in VoIP, IP Telephony, and Voice AI solutions. 
