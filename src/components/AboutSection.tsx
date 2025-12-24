@@ -77,7 +77,7 @@ const AboutSection = () => {
               Why Choose IntelVoiz for VoIP & Voice AI Solutions?
             </h2>
             <p className="text-lg text-gray-600">
-              's trusted partner for comprehensive VoIP and Voice AI consulting services
+              Trusted partner for comprehensive VoIP and Voice AI consulting services
             </p>
           </div>
 
@@ -150,7 +150,7 @@ const AboutSection = () => {
             Ready to Transform Your Business Communication?
           </h3>
           <p className="text-lg text-gray-600 mb-8">
-            Get expert VoIP and Voice AI consultation from 's leading telecommunications experts
+            Get expert VoIP and Voice AI consultation from leading telecommunications experts
           </p>
           <button 
             onClick={() => {

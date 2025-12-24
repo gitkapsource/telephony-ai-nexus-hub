@@ -850,7 +850,7 @@ const BlogPost = () => {
                 Need VoIP or Voice AI Solutions?
               </h3>
               <p className="text-gray-600 mb-6">
-                Get expert consultation from 's leading VoIP and Voice AI specialists. 
+                Get expert consultation from leading VoIP and Voice AI specialists. 
                 Contact us for a free assessment of your communication needs.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">

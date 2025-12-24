@@ -94,7 +94,7 @@ const ContactSection = () => {
             Contact IntelVoiz - VoIP & Voice AI Experts
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Get expert VoIP and Voice AI consultation from 's leading telecommunications experts. 
+            Get expert VoIP and Voice AI consultation from leading telecommunications experts. 
             Consultation available for all VoIP and Voice AI projects.
           </p>
         </div>
