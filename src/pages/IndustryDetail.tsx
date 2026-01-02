@@ -74,8 +74,9 @@ const IndustryDetail = () => {
           <Link to="/" className="inline-block mb-6">
             <img 
               src="/lovable-uploads/76923a56-250c-4961-a336-c37c70150296.png" 
-              alt="IntelVoiz" 
-              className="h-12 mx-auto hover:opacity-80 transition-opacity"
+              alt="IntelVoiz Communications" 
+              className="h-12 mx-auto hover:opacity-80 transition-opacity duration-300 cursor-pointer"
+              title="IntelVoiz Communications"
             />
           </Link>
           <h1 className="text-4xl font-bold text-gray-900 mb-4">{industry.name}</h1>

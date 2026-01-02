@@ -104,9 +104,9 @@ const ServicesSection = () => {
   ];
 
   return (
-    <section id="services" className="py-20 bg-gradient-to-b from-white to-slate-50/50">
+    <section id="services" className="py-12 bg-gradient-to-b from-white to-slate-50/50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <div className="text-center mb-10">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">
             Expert VoIP and Voice AI Services in 
           </h1>
@@ -118,7 +118,7 @@ const ServicesSection = () => {
         </div>
 
         {/* Main Services */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {mainServices.map((service, index) => (
             <div 
               key={index}
@@ -150,7 +150,7 @@ const ServicesSection = () => {
 
         {/* Services Portfolio */}
         <div className="bg-gray-50 rounded-2xl p-8 lg:p-12">
-          <div className="text-center mb-12">
+          <div className="text-center mb-8">
             <h3 className="text-3xl font-bold text-gray-900 mb-4">
               Complete VoIP & Voice AI Services Portfolio
             </h3>
@@ -189,8 +189,8 @@ const ServicesSection = () => {
         </div>
 
         {/* Additional Services */}
-        <div className="mt-20">
-          <div className="text-center mb-12">
+        <div className="mt-12">
+          <div className="text-center mb-10">
             <h3 className="text-3xl font-bold text-gray-900 mb-4">
               Specialized VoIP & Voice AI Solutions
             </h3>

@@ -24,9 +24,9 @@ const AboutSection = () => {
   ];
 
   return (
-    <section id="about" className="py-20 bg-gradient-to-b from-slate-50/50 via-white to-indigo-50/30">
+    <section id="about" className="py-12 bg-gradient-to-b from-slate-50/50 via-white to-indigo-50/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto text-center mb-16">
+        <div className="max-w-4xl mx-auto text-center mb-10">
           <div className="space-y-8">
             <div>
               <h1 className="text-4xl font-bold text-gray-900 mb-6">
@@ -48,7 +48,7 @@ const AboutSection = () => {
         </div>
 
         {/* Stats */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-10">
           {stats.map((stat, index) => (
             <div key={index} className="text-center">
               <div className="flex items-center justify-center w-16 h-16 bg-gradient-to-br from-blue-100 to-purple-100 rounded-lg mx-auto mb-4">
@@ -61,7 +61,7 @@ const AboutSection = () => {
         </div>
 
         {/* Expertise Areas */}
-        <div className="grid md:grid-cols-3 gap-8 mb-16">
+        <div className="grid md:grid-cols-3 gap-8 mb-10">
           {expertise.map((area, index) => (
             <div key={index} className="bg-white rounded-lg p-6 shadow-sm">
               <h3 className="text-xl font-semibold text-gray-900 mb-4">{area.title}</h3>
@@ -72,7 +72,7 @@ const AboutSection = () => {
 
         {/* Why Choose Us */}
         <div className="bg-white rounded-2xl p-8 lg:p-12 shadow-sm">
-          <div className="text-center mb-12">
+          <div className="text-center mb-8">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">
               Why Choose IntelVoiz for VoIP & Voice AI Solutions?
             </h2>
@@ -145,7 +145,7 @@ const AboutSection = () => {
         </div>
 
         {/* Call to Action */}
-        <div className="text-center mt-16">
+        <div className="text-center mt-10">
           <h3 className="text-2xl font-bold text-gray-900 mb-4">
             Ready to Transform Your Business Communication?
           </h3>

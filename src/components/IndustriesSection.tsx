@@ -15,9 +15,9 @@ const industries = [
 ];
 
 const IndustriesSection = () => (
-  <section id="industries" className="py-16 bg-gray-50">
+  <section id="industries" className="py-10 bg-gray-50">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div className="text-center mb-12">
+      <div className="text-center mb-10">
         <h2 className="text-4xl font-bold text-gray-900 mb-4">
           AI Automation Industries
         </h2>
@@ -46,7 +46,7 @@ const IndustriesSection = () => (
         ))}
       </div>
       
-      <div className="text-center mt-12">
+      <div className="text-center mt-8">
         <p className="text-gray-600 mb-4">
           Don't see your industry? We can customize solutions for any business type.
         </p>

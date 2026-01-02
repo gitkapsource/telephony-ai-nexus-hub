@@ -24,9 +24,9 @@ const ClientsSection = () => {
   ];
 
   return (
-    <section id="clients" className="py-16 bg-white">
+    <section id="clients" className="py-10 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
+        <div className="text-center mb-10">
           <div className="flex items-center justify-center mb-4">
             <div className="flex items-center justify-center w-16 h-16 bg-gradient-to-br from-blue-100 to-purple-100 rounded-lg">
               <Users className="h-8 w-8 text-blue-600" />
@@ -67,7 +67,7 @@ const ClientsSection = () => {
           ))}
         </div>
 
-        <div className="mt-12 text-center">
+        <div className="mt-8 text-center">
           <p className="text-lg text-gray-600 mb-6">
             Join our growing list of satisfied clients and transform your communication infrastructure
           </p>

@@ -81,7 +81,7 @@ const BlogSection = () => {
   return (
     <section id="blog" className="py-12 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <div className="text-center mb-10">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">
             VoIP & Voice AI Blog - Expert Insights
           </h1>
@@ -153,7 +153,7 @@ const BlogSection = () => {
         </div>
 
         {/* Categories */}
-        <div className="mb-12">
+        <div className="mb-8">
           <h2 className="text-2xl font-bold text-gray-900 mb-8">Browse by Category</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {categories.map((category, index) => (
