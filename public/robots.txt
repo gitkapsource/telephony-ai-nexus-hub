@@ -7,11 +7,17 @@ Sitemap: https://intelvoiz.com/sitemap.xml
 # Crawl-delay
 Crawl-delay: 1
 
-# Disallow admin areas (if any)
+# Disallow admin areas and private directories
 Disallow: /admin/
 Disallow: /private/
+Disallow: /api/
 
-# Allow all important pages
-Allow: /src/
-Allow: /components/
-Allow: /pages/
+# Allow important resources
+Allow: /blog
+Allow: /#services
+Allow: /#about
+Allow: /#contact
+
+# Block common non-content paths
+Disallow: /*.json$
+Disallow: /*?*

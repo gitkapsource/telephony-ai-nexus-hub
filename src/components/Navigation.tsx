@@ -33,7 +33,7 @@ const Navigation = () => {
           <div className="flex items-center">
             <img 
               src="/lovable-uploads/76923a56-250c-4961-a336-c37c70150296.png" 
-              alt="Intelligent Voice" 
+              alt="IntelVoiz - Leading VoIP and Voice AI Solutions Provider Logo" 
               className="h-16"
             />
           </div>

@@ -48,7 +48,7 @@ const Footer = () => {
             <div className="flex items-center mb-6">
               <img 
                 src="/lovable-uploads/76923a56-250c-4961-a336-c37c70150296.png" 
-                alt="IntelVoiz - VoIP & Voice AI Experts" 
+                alt="IntelVoiz - Leading VoIP and Voice AI Solutions Provider Logo" 
                 className="h-8"
               />
             </div>
