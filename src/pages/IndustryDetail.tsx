@@ -19,7 +19,7 @@ const industryData: Record<string, { name: string; description: string; details:
   },
   'restaurants': {
     name: 'Restaurants',
-    description: 'AI chatbots and voice ordering for restaurants, reservations, and customer service.',
+    description: 'AI Voicebots and voice ordering for restaurants, reservations, and customer service.',
     details: 'Offer voice ordering, reservation management, and instant customer support for restaurants using conversational AI.'
   },
   'e-commerce': {
@@ -85,7 +85,6 @@ const IndustryDetail = () => {
         <div className="bg-white rounded-lg shadow p-6 mb-8">
           <h2 className="text-2xl font-semibold mb-2">How We Help {industry.name} Companies</h2>
           <p className="text-gray-700 mb-4">{industry.details}</p>
-          <p className="text-gray-500 text-sm">(More industry-specific content and case studies can be added here.)</p>
         </div>
         <Link to="/industries" className="inline-block bg-blue-600 text-white px-5 py-2 rounded hover:bg-blue-700 font-medium transition-colors">Back to All Industries</Link>
       </div>
