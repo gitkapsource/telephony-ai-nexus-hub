@@ -54,7 +54,7 @@ const Footer = () => {
               />
             </div>
             <p className="text-gray-300 mb-6 leading-relaxed">
-              's leading VoIP and Voice AI solutions provider. Expert IP Telephony, Voice Bots, 
+              Leading VoIP and Voice AI solutions provider. Expert IP Telephony, Voice Bots, 
               Chat Bots, SIP trunking, and telecommunications consulting services across .
             </p>
             <div className="space-y-3">
