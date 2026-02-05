@@ -85,7 +85,7 @@ const Navigation = () => {
               <div className="p-2 bg-indigo-50 rounded-lg mr-2">
                 <Phone className="h-4 w-4 text-indigo-600" />
               </div>
-              <span>+91-7935901473</span>
+              <span>+16824280781</span>
             </div>
             <div className="flex items-center text-gray-600 text-base font-medium hover:text-indigo-600 transition-colors">
               <div className="p-2 bg-indigo-50 rounded-lg mr-2">
