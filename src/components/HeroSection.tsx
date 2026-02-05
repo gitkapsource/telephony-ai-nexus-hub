@@ -88,7 +88,7 @@ const HeroSection = () => {
                   <div className="p-1.5 bg-blue-50 rounded-lg">
                     <Phone className="h-4 w-4 text-blue-600" />
                   </div>
-                  <span className="font-medium">+91-7935901473</span>
+                  <span className="font-medium">+16824280781</span>
                 </div>
                 <div className="flex items-center space-x-2 text-gray-600 hover:text-purple-600 transition-colors">
                   <div className="p-1.5 bg-purple-50 rounded-lg">
