@@ -209,7 +209,7 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900">Phone</h3>
-                    <p className="text-gray-600">+91-7935901473</p>
+                    <p className="text-gray-600">+16824280781</p>
                   </div>
                 </div>
 
@@ -228,7 +228,7 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900">Telegram</h3>
-                    <p className="text-gray-600">+91-7935901473</p>
+                    <p className="text-gray-600">+16824280781</p>
                   </div>
                 </div>
 
