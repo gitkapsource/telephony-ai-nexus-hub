@@ -92,7 +92,7 @@ const BlogPost = () => {
         <h2>Conclusion</h2>
         <p>VoIP migration is a strategic investment that can significantly improve your business communication while reducing costs. With proper planning and implementation, n businesses can successfully transition to modern VoIP systems and enjoy the benefits of advanced telephony features.</p>
         
-        <p>For expert VoIP migration services in , contact IntelVoiz at +91-7935901473 or email info@intelvoiz.com.</p>
+        <p>For expert VoIP migration services in , contact IntelVoiz at +16824280781 or email info@intelvoiz.com.</p>
       `,
       category: "VoIP Solutions",
       readTime: "8 min read",
@@ -263,7 +263,7 @@ const BlogPost = () => {
         <h2>Conclusion</h2>
         <p>Both FreeSWITCH and Asterisk are excellent VoIP platforms, but they serve different needs. For most n SMBs, Asterisk offers the best balance of features, ease of use, and local support. For larger enterprises with high call volumes, FreeSWITCH provides superior performance and scalability.</p>
         
-        <p>Contact IntelVoiz at +91-7935901473 for expert consultation on choosing the right VoIP platform for your business.</p>
+        <p>Contact IntelVoiz at +16824280781 for expert consultation on choosing the right VoIP platform for your business.</p>
       `,
       category: "VoIP Platforms",
       readTime: "6 min read",
@@ -375,7 +375,7 @@ const BlogPost = () => {
         <h2>Conclusion</h2>
         <p>Amazon Connect provides n businesses with a powerful, scalable contact center solution. With proper implementation and optimization, it can significantly improve customer service while reducing costs.</p>
         
-        <p>For expert Amazon Connect implementation in , contact IntelVoiz at +91-7935901473.</p>
+        <p>For expert Amazon Connect implementation in , contact IntelVoiz at +16824280781.</p>
       `
     },
     {
@@ -473,7 +473,7 @@ const BlogPost = () => {
         <h2>Conclusion</h2>
         <p>Voice AI is not just a trend—it's a fundamental shift in how businesses interact with customers. n businesses that adopt Voice AI early will gain significant competitive advantages.</p>
         
-        <p>Contact IntelVoiz at +91-7935901473 for expert Voice AI implementation services.</p>
+        <p>Contact IntelVoiz at +16824280781 for expert Voice AI implementation services.</p>
       `
     },
     {
@@ -602,7 +602,7 @@ const BlogPost = () => {
         <h2>Conclusion</h2>
         <p>Google Dialogflow provides n businesses with a powerful platform for building intelligent conversational agents. With proper implementation and optimization, it can significantly improve customer engagement and operational efficiency.</p>
         
-        <p>For expert Dialogflow implementation in , contact IntelVoiz at +91-7935901473.</p>
+        <p>For expert Dialogflow implementation in , contact IntelVoiz at +16824280781.</p>
       `
     },
     {
@@ -735,7 +735,7 @@ const BlogPost = () => {
         <h2>Conclusion</h2>
         <p>SIP trunking offers n businesses significant cost savings and operational benefits. With proper implementation and management, it can transform your business communication infrastructure.</p>
         
-        <p>For expert SIP trunking services in , contact IntelVoiz at +91-7935901473.</p>
+        <p>For expert SIP trunking services in , contact IntelVoiz at +16824280781.</p>
       `
     }
   ];
@@ -861,10 +861,10 @@ const BlogPost = () => {
                   Book Consultation
                 </Link>
                 <a 
-                  href="tel:+91-7935901473"
+                  href="tel:+16824280781"
                   className="border-2 border-gray-300 text-gray-700 px-6 py-3 rounded-lg font-semibold hover:border-blue-600 hover:text-blue-600 transition-all duration-300 text-center"
                 >
-                  Call +91-7935901473
+                  Call +16824280781
                 </a>
               </div>
             </div>
